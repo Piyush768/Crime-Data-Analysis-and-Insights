@@ -1,0 +1,4520 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>0f9210a4d9f84446ace29277c8d3c1b0</title>
+  <style>
+    html {
+      line-height: 1.5;
+      font-family: Georgia, serif;
+      font-size: 20px;
+      color: #1a1a1a;
+      background-color: #fdfdfd;
+    }
+    body {
+      margin: 0 auto;
+      max-width: 36em;
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      hyphens: auto;
+      overflow-wrap: break-word;
+      text-rendering: optimizeLegibility;
+      font-kerning: normal;
+    }
+    @media (max-width: 600px) {
+      body {
+        font-size: 0.9em;
+        padding: 1em;
+      }
+      h1 {
+        font-size: 1.8em;
+      }
+    }
+    @media print {
+      body {
+        background-color: transparent;
+        color: black;
+        font-size: 12pt;
+      }
+      p, h2, h3 {
+        orphans: 3;
+        widows: 3;
+      }
+      h2, h3, h4 {
+        page-break-after: avoid;
+      }
+    }
+    p {
+      margin: 1em 0;
+    }
+    a {
+      color: #1a1a1a;
+    }
+    a:visited {
+      color: #1a1a1a;
+    }
+    img {
+      max-width: 100%;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin-top: 1.4em;
+    }
+    h5, h6 {
+      font-size: 1em;
+      font-style: italic;
+    }
+    h6 {
+      font-weight: normal;
+    }
+    ol, ul {
+      padding-left: 1.7em;
+      margin-top: 1em;
+    }
+    li > ol, li > ul {
+      margin-top: 0;
+    }
+    blockquote {
+      margin: 1em 0 1em 1.7em;
+      padding-left: 1em;
+      border-left: 2px solid #e6e6e6;
+      color: #606060;
+    }
+    code {
+      font-family: Menlo, Monaco, 'Lucida Console', Consolas, monospace;
+      font-size: 85%;
+      margin: 0;
+    }
+    pre {
+      margin: 1em 0;
+      overflow: auto;
+    }
+    pre code {
+      padding: 0;
+      overflow: visible;
+      overflow-wrap: normal;
+    }
+    .sourceCode {
+     background-color: transparent;
+     overflow: visible;
+    }
+    hr {
+      background-color: #1a1a1a;
+      border: none;
+      height: 1px;
+      margin: 1em 0;
+    }
+    table {
+      margin: 1em 0;
+      border-collapse: collapse;
+      width: 100%;
+      overflow-x: auto;
+      display: block;
+      font-variant-numeric: lining-nums tabular-nums;
+    }
+    table caption {
+      margin-bottom: 0.75em;
+    }
+    tbody {
+      margin-top: 0.5em;
+      border-top: 1px solid #1a1a1a;
+      border-bottom: 1px solid #1a1a1a;
+    }
+    th {
+      border-top: 1px solid #1a1a1a;
+      padding: 0.25em 0.5em 0.25em 0.5em;
+    }
+    td {
+      padding: 0.125em 0.5em 0.25em 0.5em;
+    }
+    header {
+      margin-bottom: 4em;
+      text-align: center;
+    }
+    #TOC li {
+      list-style: none;
+    }
+    #TOC ul {
+      padding-left: 1.3em;
+    }
+    #TOC > ul {
+      padding-left: 0;
+    }
+    #TOC a:not(:hover) {
+      text-decoration: none;
+    }
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      {   }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { color: #008000; } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { color: #008000; font-weight: bold; } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+<section id="piyush-anil-patil" class="cell markdown" id="NfJGBAHdfEc4">
+<h1><strong><em>PIYUSH ANIL PATIL</em></strong></h1>
+</section>
+<section id="blueguardian-force-analytics" class="cell markdown"
+id="gd9WfnOigB1R">
+<h1><strong><em>BLUEGUARDIAN FORCE ANALYTICS</em></strong></h1>
+</section>
+<section id="1-objective" class="cell markdown" id="SAi2XS7xg1_A">
+<h1><strong><em>1. OBJECTIVE</em></strong></h1>
+</section>
+<div class="cell markdown" id="-_hiS5SCrCDO">
+<p>Our Startup, <strong><em>Blueguardian Force Analytics</em></strong>
+main goal is to deliver a thorough report on police enforcement
+optimization to executive officers in States of USA. The goal of the
+study is to offer insightful analysis and data-driven suggestions to
+improve law enforcement efforts, boost public safety, and boost general
+community wellbeing. In particular, our report will:</p>
+<p><strong><em>1.Highlight Essential Findings:</em></strong> In our
+report, we will provide the most relevant crime information as per the
+states in USA. These revelations related to violent crimes, homicides,
+rapes, assaults and robberies. And the report will provided monthly
+crime stats also.</p>
+<p><strong><em>2.Data-Driven Analysis:</em></strong> The report deliver
+data-driven analysis that is collected by sources and relevant to the
+particular location. Several sources, including crime statistics,
+community feedback, and law enforcement tactics, will be used in this
+research.</p>
+<p><strong><em>3.Suggestions for Optimization Techniques:</em></strong>
+The study will recommend optimization tactics for police enforcement in
+addition to identifying most happeing crime. The suggestions will be
+based on analysing and technological help to prevent crime and creative
+approaches to find a crimal.</p>
+<p><strong><em>4.Informed Decision-Making:</em></strong> This report
+will give the information and understanding how to make choices that
+will advance community well-being and public safety. Our goal is to
+promote cooperation between law enforcement organizations and
+neighborhood communities.</p>
+<p><strong><em>5.Personalized Approach:</em></strong> The report caters
+to the most crimes that are happening in the city. Our startup will work
+closely with them. The goal is to solve a particular issue and improve
+the community.</p>
+<p><strong><em>6.Showcase the Impact of Blueguardian Force
+Analytics</em></strong>: We hope to show through our reports how may be
+an asset in our search for better police enforcement. To demonstrate the
+potential advantages of our services, we shall draw attention to the
+successful results attained in other places.</p>
+<p>Overall, we want to interact with police offcier and local executive
+officers, provide informative reports, and encourage data-driven
+decision-making that improves citizen quality of life and public
+safety.</p>
+</div>
+<section id="2-data-exploration" class="cell markdown"
+id="IXiE3fjqjBjg">
+<h1><strong><em>2. DATA EXPLORATION</em></strong></h1>
+</section>
+<div class="cell code" data-execution_count="19"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:226}"
+id="ZObCy6fHkaxR" data-outputId="06684cb1-85f5-4699-b8ab-efd85e9fbbde">
+<div class="sourceCode" id="cb1"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">#importing dataset</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> pandas <span class="im">as</span> pd</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> numpy <span class="im">as</span> np</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> pd.read_csv(<span class="st">&quot;/content/report.csv&quot;</span>)</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>df.head()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="19">
+
+  <div id="df-0e95f706-d177-4f83-a370-5201c94f672e" class="colab-df-container">
+    <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>report_year</th>
+      <th>agency_code</th>
+      <th>agency_jurisdiction</th>
+      <th>population</th>
+      <th>violent_crimes</th>
+      <th>homicides</th>
+      <th>rapes</th>
+      <th>assaults</th>
+      <th>robberies</th>
+      <th>months_reported</th>
+      <th>crimes_percapita</th>
+      <th>homicides_percapita</th>
+      <th>rapes_percapita</th>
+      <th>assaults_percapita</th>
+      <th>robberies_percapita</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1975</td>
+      <td>NM00101</td>
+      <td>Albuquerque, NM</td>
+      <td>286238.0</td>
+      <td>2383.0</td>
+      <td>30.0</td>
+      <td>181.0</td>
+      <td>1353.0</td>
+      <td>819.0</td>
+      <td>12.0</td>
+      <td>832.52</td>
+      <td>10.48</td>
+      <td>63.23</td>
+      <td>472.68</td>
+      <td>286.13</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>1975</td>
+      <td>TX22001</td>
+      <td>Arlington, TX</td>
+      <td>112478.0</td>
+      <td>278.0</td>
+      <td>5.0</td>
+      <td>28.0</td>
+      <td>132.0</td>
+      <td>113.0</td>
+      <td>12.0</td>
+      <td>247.16</td>
+      <td>4.45</td>
+      <td>24.89</td>
+      <td>117.36</td>
+      <td>100.46</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>1975</td>
+      <td>GAAPD00</td>
+      <td>Atlanta, GA</td>
+      <td>490584.0</td>
+      <td>8033.0</td>
+      <td>185.0</td>
+      <td>443.0</td>
+      <td>3518.0</td>
+      <td>3887.0</td>
+      <td>12.0</td>
+      <td>1637.44</td>
+      <td>37.71</td>
+      <td>90.30</td>
+      <td>717.10</td>
+      <td>792.32</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>1975</td>
+      <td>CO00101</td>
+      <td>Aurora, CO</td>
+      <td>116656.0</td>
+      <td>611.0</td>
+      <td>7.0</td>
+      <td>44.0</td>
+      <td>389.0</td>
+      <td>171.0</td>
+      <td>12.0</td>
+      <td>523.76</td>
+      <td>6.00</td>
+      <td>37.72</td>
+      <td>333.46</td>
+      <td>146.58</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>1975</td>
+      <td>TX22701</td>
+      <td>Austin, TX</td>
+      <td>300400.0</td>
+      <td>1215.0</td>
+      <td>33.0</td>
+      <td>190.0</td>
+      <td>463.0</td>
+      <td>529.0</td>
+      <td>12.0</td>
+      <td>404.46</td>
+      <td>10.99</td>
+      <td>63.25</td>
+      <td>154.13</td>
+      <td>176.10</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+    <div class="colab-df-buttons">
+
+  <div class="colab-df-container">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-0e95f706-d177-4f83-a370-5201c94f672e')"
+            title="Convert this dataframe to an interactive table."
+            style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960">
+    <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"/>
+  </svg>
+    </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    .colab-df-buttons div {
+      margin-bottom: 4px;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+    <script>
+      const buttonEl =
+        document.querySelector('#df-0e95f706-d177-4f83-a370-5201c94f672e button.colab-df-convert');
+      buttonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+      async function convertToInteractive(key) {
+        const element = document.querySelector('#df-0e95f706-d177-4f83-a370-5201c94f672e');
+        const dataTable =
+          await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                    [key], {});
+        if (!dataTable) return;
+
+        const docLinkHtml = 'Like what you see? Visit the ' +
+          '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+          + ' to learn more about interactive tables.';
+        element.innerHTML = '';
+        dataTable['output_type'] = 'display_data';
+        await google.colab.output.renderOutput(dataTable, element);
+        const docLink = document.createElement('div');
+        docLink.innerHTML = docLinkHtml;
+        element.appendChild(docLink);
+      }
+    </script>
+  </div>
+
+
+<div id="df-f890b031-b1bf-41f1-9129-6706129761fc">
+  <button class="colab-df-quickchart" onclick="quickchart('df-f890b031-b1bf-41f1-9129-6706129761fc')"
+            title="Suggest charts."
+            style="display:none;">
+
+<svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+     width="24px">
+    <g>
+        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
+    </g>
+</svg>
+  </button>
+
+<style>
+  .colab-df-quickchart {
+      --bg-color: #E8F0FE;
+      --fill-color: #1967D2;
+      --hover-bg-color: #E2EBFA;
+      --hover-fill-color: #174EA6;
+      --disabled-fill-color: #AAA;
+      --disabled-bg-color: #DDD;
+  }
+
+  [theme=dark] .colab-df-quickchart {
+      --bg-color: #3B4455;
+      --fill-color: #D2E3FC;
+      --hover-bg-color: #434B5C;
+      --hover-fill-color: #FFFFFF;
+      --disabled-bg-color: #3B4455;
+      --disabled-fill-color: #666;
+  }
+
+  .colab-df-quickchart {
+    background-color: var(--bg-color);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    fill: var(--fill-color);
+    height: 32px;
+    padding: 0;
+    width: 32px;
+  }
+
+  .colab-df-quickchart:hover {
+    background-color: var(--hover-bg-color);
+    box-shadow: 0 1px 2px rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
+    fill: var(--button-hover-fill-color);
+  }
+
+  .colab-df-quickchart-complete:disabled,
+  .colab-df-quickchart-complete:disabled:hover {
+    background-color: var(--disabled-bg-color);
+    fill: var(--disabled-fill-color);
+    box-shadow: none;
+  }
+
+  .colab-df-spinner {
+    border: 2px solid var(--fill-color);
+    border-color: transparent;
+    border-bottom-color: var(--fill-color);
+    animation:
+      spin 1s steps(1) infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+      border-left-color: var(--fill-color);
+    }
+    20% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    30% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+      border-right-color: var(--fill-color);
+    }
+    40% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    60% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+    }
+    80% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-bottom-color: var(--fill-color);
+    }
+    90% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+    }
+  }
+</style>
+
+  <script>
+    async function quickchart(key) {
+      const quickchartButtonEl =
+        document.querySelector('#' + key + ' button');
+      quickchartButtonEl.disabled = true;  // To prevent multiple clicks.
+      quickchartButtonEl.classList.add('colab-df-spinner');
+      try {
+        const charts = await google.colab.kernel.invokeFunction(
+            'suggestCharts', [key], {});
+      } catch (error) {
+        console.error('Error during call to suggestCharts:', error);
+      }
+      quickchartButtonEl.classList.remove('colab-df-spinner');
+      quickchartButtonEl.classList.add('colab-df-quickchart-complete');
+    }
+    (() => {
+      let quickchartButtonEl =
+        document.querySelector('#df-f890b031-b1bf-41f1-9129-6706129761fc button');
+      quickchartButtonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+    })();
+  </script>
+</div>
+    </div>
+  </div>
+
+</div>
+</div>
+<div class="cell code" data-execution_count="2"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="19MfWphRKqZY" data-outputId="705af5e6-81a1-4923-8a8d-a9a0ac29c7b7">
+<div class="sourceCode" id="cb2"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co">#displaying total rows and columns of dataset</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>num_rows <span class="op">=</span> df.shape[<span class="dv">0</span>]</span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>num_columns <span class="op">=</span> df.shape[<span class="dv">1</span>]</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f&quot;Number of Rows: </span><span class="sc">{</span>num_rows<span class="sc">}</span><span class="ss">&quot;</span>)</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="ss">f&quot;Number of Columns: </span><span class="sc">{</span>num_columns<span class="sc">}</span><span class="ss">&quot;</span>)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>Number of Rows: 2829
+Number of Columns: 15
+</code></pre>
+</div>
+</div>
+<div class="cell code" data-execution_count="3"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="bQQq47IimLkr" data-outputId="d8c99429-876e-44fe-960a-fe373501354b">
+<div class="sourceCode" id="cb4"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co">#dispalying names of the columns of data set and cleaning the column names removing the unnecessary symbols and Capitalize One letter.</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>column_names <span class="op">=</span> df.columns</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a>cleaned_column_names <span class="op">=</span> [name.replace(<span class="st">&quot;_&quot;</span>, <span class="st">&quot; &quot;</span>).title() <span class="cf">for</span> name <span class="kw">in</span> column_names]</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;Cleaned and Capitalized Column Names:&quot;</span>)</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> name <span class="kw">in</span> cleaned_column_names:</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(name)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>Cleaned and Capitalized Column Names:
+Report Year
+Agency Code
+Agency Jurisdiction
+Population
+Violent Crimes
+Homicides
+Rapes
+Assaults
+Robberies
+Months Reported
+Crimes Percapita
+Homicides Percapita
+Rapes Percapita
+Assaults Percapita
+Robberies Percapita
+</code></pre>
+</div>
+</div>
+<div class="cell code" data-execution_count="4"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="8XsvNnGbm1Yn" data-outputId="aec28dc2-ac37-4ef7-f5b9-b1a81b706af4">
+<div class="sourceCode" id="cb6"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co">#displaying glimpse of the dataset</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>glimpse <span class="op">=</span> df.head(<span class="dv">5</span>)</span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>glimpse.head</span></code></pre></div>
+<div class="output execute_result" data-execution_count="4">
+<pre><code>&lt;bound method NDFrame.head of    report_year agency_code agency_jurisdiction  population  violent_crimes  \
+0         1975     NM00101     Albuquerque, NM    286238.0          2383.0   
+1         1975     TX22001       Arlington, TX    112478.0           278.0   
+2         1975     GAAPD00         Atlanta, GA    490584.0          8033.0   
+3         1975     CO00101          Aurora, CO    116656.0           611.0   
+4         1975     TX22701          Austin, TX    300400.0          1215.0   
+
+   homicides  rapes  assaults  robberies  months_reported  crimes_percapita  \
+0       30.0  181.0    1353.0      819.0             12.0            832.52   
+1        5.0   28.0     132.0      113.0             12.0            247.16   
+2      185.0  443.0    3518.0     3887.0             12.0           1637.44   
+3        7.0   44.0     389.0      171.0             12.0            523.76   
+4       33.0  190.0     463.0      529.0             12.0            404.46   
+
+   homicides_percapita  rapes_percapita  assaults_percapita  \
+0                10.48            63.23              472.68   
+1                 4.45            24.89              117.36   
+2                37.71            90.30              717.10   
+3                 6.00            37.72              333.46   
+4                10.99            63.25              154.13   
+
+   robberies_percapita  
+0               286.13  
+1               100.46  
+2               792.32  
+3               146.58  
+4               176.10  &gt;</code></pre>
+</div>
+</div>
+<div class="cell code" data-execution_count="5"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="aWepk40qScVE" data-outputId="851f6c8c-724d-47f4-f32e-43fee987f39f">
+<div class="sourceCode" id="cb8"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co">#finding the unique values the column</span></span>
+<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a>agency_jurisdiction <span class="op">=</span> df[<span class="st">&#39;agency_jurisdiction&#39;</span>].unique()</span>
+<span id="cb8-3"><a href="#cb8-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(agency_jurisdiction)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>[&#39;Albuquerque, NM&#39; &#39;Arlington, TX&#39; &#39;Atlanta, GA&#39; &#39;Aurora, CO&#39; &#39;Austin, TX&#39;
+ &#39;Baltimore County, MD&#39; &#39;Baltimore, MD&#39; &#39;Boston, MA&#39; &#39;Buffalo, NY&#39;
+ &#39;Charlotte, NC&#39; &#39;Chicago, IL&#39; &#39;Cincinnati, OH&#39; &#39;Cleveland, OH&#39;
+ &#39;Columbus, OH&#39; &#39;Dallas, TX&#39; &#39;Denver, CO&#39; &#39;Detroit, MI&#39; &#39;El Paso, TX&#39;
+ &#39;Fairfax County, VA&#39; &#39;Fort Worth, TX&#39; &#39;Fresno, CA&#39; &#39;Honolulu, HI&#39;
+ &#39;Houston, TX&#39; &#39;Indianapolis, IN&#39; &#39;Jacksonville, FL&#39; &#39;Kansas City, MO&#39;
+ &#39;Las Vegas, NV&#39; &#39;Long Beach, CA&#39; &#39;Los Angeles County, CA&#39;
+ &#39;Los Angeles, CA&#39; &#39;Louisville, KY&#39; &#39;Memphis, TN&#39; &#39;Mesa, AZ&#39;
+ &#39;Miami-Dade County, FL&#39; &#39;Miami, FL&#39; &#39;Milwaukee, WI&#39; &#39;Minneapolis, MN&#39;
+ &#39;Montgomery County, MD&#39; &#39;Nashville, TN&#39; &#39;Nassau County, NY&#39;
+ &#39;New Orleans, LA&#39; &#39;New York City, NY&#39; &#39;Newark, NJ&#39; &#39;Oakland, CA&#39;
+ &#39;Oklahoma City, OK&#39; &#39;Omaha, NE&#39; &#39;Orlando, FL&#39; &#39;Philadelphia, PA&#39;
+ &#39;Phoenix, AZ&#39; &#39;Pittsburgh, PA&#39; &#39;Portland, OR&#39;
+ &quot;Prince George&#39;s County, MD&quot; &#39;Raleigh, NC&#39; &#39;Sacramento, CA&#39;
+ &#39;Salt Lake City, UT&#39; &#39;San Antonio, TX&#39; &#39;San Diego, CA&#39;
+ &#39;San Francisco, CA&#39; &#39;San Jose, CA&#39; &#39;Seattle, WA&#39; &#39;St. Louis, MO&#39;
+ &#39;Suffolk County, NY&#39; &#39;Tampa, FL&#39; &#39;Tucson, AZ&#39; &#39;Tulsa, OK&#39;
+ &#39;Virginia Beach, VA&#39; &#39;Washington, DC&#39; &#39;Wichita, KS&#39; &#39;United States&#39;]
+</code></pre>
+</div>
+</div>
+<div class="cell code" data-execution_count="30"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="05XT7hyFdMyI" data-outputId="057aeedd-f957-434b-cc97-bd1e8eb3c5d6">
+<div class="sourceCode" id="cb10"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="co">#removing USA from agency_jurisdiction because USA is not a state</span></span>
+<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> df[df[<span class="st">&#39;agency_jurisdiction&#39;</span>] <span class="op">!=</span> <span class="st">&#39;United States&#39;</span>]</span>
+<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(df[<span class="st">&#39;agency_jurisdiction&#39;</span>].unique())</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>[&#39;Albuquerque, NM&#39; &#39;Arlington, TX&#39; &#39;Atlanta, GA&#39; &#39;Aurora, CO&#39; &#39;Austin, TX&#39;
+ &#39;Baltimore County, MD&#39; &#39;Baltimore, MD&#39; &#39;Boston, MA&#39; &#39;Buffalo, NY&#39;
+ &#39;Charlotte, NC&#39; &#39;Chicago, IL&#39; &#39;Cincinnati, OH&#39; &#39;Cleveland, OH&#39;
+ &#39;Columbus, OH&#39; &#39;Dallas, TX&#39; &#39;Denver, CO&#39; &#39;Detroit, MI&#39; &#39;El Paso, TX&#39;
+ &#39;Fairfax County, VA&#39; &#39;Fort Worth, TX&#39; &#39;Fresno, CA&#39; &#39;Honolulu, HI&#39;
+ &#39;Houston, TX&#39; &#39;Indianapolis, IN&#39; &#39;Jacksonville, FL&#39; &#39;Kansas City, MO&#39;
+ &#39;Las Vegas, NV&#39; &#39;Long Beach, CA&#39; &#39;Los Angeles County, CA&#39;
+ &#39;Los Angeles, CA&#39; &#39;Louisville, KY&#39; &#39;Memphis, TN&#39; &#39;Mesa, AZ&#39;
+ &#39;Miami-Dade County, FL&#39; &#39;Miami, FL&#39; &#39;Milwaukee, WI&#39; &#39;Minneapolis, MN&#39;
+ &#39;Montgomery County, MD&#39; &#39;Nashville, TN&#39; &#39;Nassau County, NY&#39;
+ &#39;New Orleans, LA&#39; &#39;New York City, NY&#39; &#39;Newark, NJ&#39; &#39;Oakland, CA&#39;
+ &#39;Oklahoma City, OK&#39; &#39;Omaha, NE&#39; &#39;Orlando, FL&#39; &#39;Philadelphia, PA&#39;
+ &#39;Phoenix, AZ&#39; &#39;Pittsburgh, PA&#39; &#39;Portland, OR&#39;
+ &quot;Prince George&#39;s County, MD&quot; &#39;Raleigh, NC&#39; &#39;Sacramento, CA&#39;
+ &#39;Salt Lake City, UT&#39; &#39;San Antonio, TX&#39; &#39;San Diego, CA&#39;
+ &#39;San Francisco, CA&#39; &#39;San Jose, CA&#39; &#39;Seattle, WA&#39; &#39;St. Louis, MO&#39;
+ &#39;Suffolk County, NY&#39; &#39;Tampa, FL&#39; &#39;Tucson, AZ&#39; &#39;Tulsa, OK&#39;
+ &#39;Virginia Beach, VA&#39; &#39;Washington, DC&#39; &#39;Wichita, KS&#39;]
+</code></pre>
+</div>
+</div>
+<div class="cell code" data-execution_count="7"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;}"
+id="iFJf7WYGohhr" data-outputId="7998bb4b-80ee-4efd-df97-e1be75eb7783">
+<div class="sourceCode" id="cb12"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co">#summary of the dataset</span></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a>summary <span class="op">=</span> df.describe()</span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(<span class="st">&quot;Summary of the Dataset:&quot;</span>)</span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(summary)</span></code></pre></div>
+<div class="output stream stdout">
+<pre><code>Summary of the Dataset:
+       report_year    population  violent_crimes    homicides        rapes  \
+count  2788.000000  2.760000e+03     2753.000000  2754.000000  2754.000000   
+mean   1995.000000  7.956981e+05     8946.377043   124.895062   416.278867   
+std      11.834282  1.012451e+06    15862.946876   203.129161   479.811934   
+min    1975.000000  1.007630e+05      154.000000     1.000000    15.000000   
+25%    1985.000000  3.779310e+05     2965.000000    32.000000   176.250000   
+50%    1995.000000  5.366145e+05     5066.000000    63.000000   291.000000   
+75%    2005.000000  8.168558e+05     8804.000000   127.000000   465.000000   
+max    2015.000000  8.550861e+06   174542.000000  2245.000000  3899.000000   
+
+           assaults      robberies  months_reported  crimes_percapita  \
+count   2753.000000    2754.000000      2692.000000       2753.000000   
+mean    4405.146023    4000.245098        11.868871       1101.271402   
+std     6977.293769    8653.902965         1.118194        678.387232   
+min       15.000000      83.000000         0.000000         16.490000   
+25%     1467.000000    1032.000000        12.000000        633.710000   
+50%     2597.000000    1940.000000        12.000000        957.970000   
+75%     4556.000000    3609.750000        12.000000       1417.570000   
+max    71030.000000  107475.000000        12.000000       4352.830000   
+
+       homicides_percapita  rapes_percapita  assaults_percapita  \
+count          2754.000000      2754.000000         2753.000000   
+mean             15.493431        59.305167          566.595434   
+std              12.400215        31.971570          369.436996   
+min               0.210000         1.640000            1.610000   
+25%               7.010000        35.775000          319.090000   
+50%              12.155000        55.900000          487.480000   
+75%              20.372500        77.797500          728.240000   
+max              94.740000       199.300000         2368.220000   
+
+       robberies_percapita  
+count          2754.000000  
+mean            459.968112  
+std             340.903534  
+min              11.460000  
+25%             210.242500  
+50%             374.400000  
+75%             612.005000  
+max            2337.520000  
+</code></pre>
+</div>
+</div>
+<section id="3-one-column-selection" class="cell markdown"
+id="zSO-v1awrSS3">
+<h1><strong><em>3. ONE COLUMN SELECTION</em></strong></h1>
+</section>
+<div class="cell markdown" id="-w7grjAHorWf">
+<ol>
+<li>All CRIMES</li>
+</ol>
+<p>The information from the columns "robberies," "violent_crimes,"
+"homicides," "rapes," and "assaults" is combined to create the column
+called "All Crime." It accomplishes the goal of giving a comprehensive
+view of all reported crimes. We can determine which states have the
+highest overall crime rates by examining this column.</p>
+<ol>
+<li>AGENCY JURISDICTION</li>
+</ol>
+<p>This column, titled "Agency Jurisdiction," indicates the place or
+region where each crime was reported. We can learn more about the
+particular states or regions where these crimes took place by looking at
+this column. It gives us context to understand the geographic
+distribution of the recorded crimes and helps in pinpointing the
+locations of reported incidents.</p>
+</div>
+<div class="cell code" data-execution_count="8"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:206}"
+id="m6D5VfIZrX14" data-outputId="2add646e-08ab-4077-b114-1d18a41424bb">
+<div class="sourceCode" id="cb14"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a>statewise_assaults <span class="op">=</span> df.groupby(<span class="st">&#39;agency_jurisdiction&#39;</span>)[[<span class="st">&#39;robberies&#39;</span>, <span class="st">&#39;violent_crimes&#39;</span>, <span class="st">&#39;homicides&#39;</span>, <span class="st">&#39;rapes&#39;</span>, <span class="st">&#39;assaults&#39;</span>]].<span class="bu">sum</span>()</span>
+<span id="cb14-2"><a href="#cb14-2" aria-hidden="true" tabindex="-1"></a>statewise_assaults <span class="op">=</span> statewise_assaults.reset_index()</span>
+<span id="cb14-3"><a href="#cb14-3" aria-hidden="true" tabindex="-1"></a>statewise_assaults[<span class="st">&#39;All Crimes&#39;</span>] <span class="op">=</span> statewise_assaults[[<span class="st">&#39;robberies&#39;</span>, <span class="st">&#39;violent_crimes&#39;</span>, <span class="st">&#39;homicides&#39;</span>, <span class="st">&#39;rapes&#39;</span>, <span class="st">&#39;assaults&#39;</span>]].<span class="bu">sum</span>(axis<span class="op">=</span><span class="dv">1</span>)</span>
+<span id="cb14-4"><a href="#cb14-4" aria-hidden="true" tabindex="-1"></a>statewise_assaults <span class="op">=</span> statewise_assaults[[<span class="st">&#39;agency_jurisdiction&#39;</span>, <span class="st">&#39;All Crimes&#39;</span>]]</span>
+<span id="cb14-5"><a href="#cb14-5" aria-hidden="true" tabindex="-1"></a>statewise_assaults <span class="op">=</span> statewise_assaults.sort_values(by<span class="op">=</span><span class="st">&#39;All Crimes&#39;</span>, ascending<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb14-6"><a href="#cb14-6" aria-hidden="true" tabindex="-1"></a>statewise_assaults.head()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="8">
+
+  <div id="df-8ec3e76b-f5be-4f39-8024-557e83a6a9d9" class="colab-df-container">
+    <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>agency_jurisdiction</th>
+      <th>All Crimes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>41</th>
+      <td>New York City, NY</td>
+      <td>8526568.0</td>
+    </tr>
+    <tr>
+      <th>29</th>
+      <td>Los Angeles, CA</td>
+      <td>3958332.0</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>Chicago, IL</td>
+      <td>3921772.0</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>Detroit, MI</td>
+      <td>1836006.0</td>
+    </tr>
+    <tr>
+      <th>22</th>
+      <td>Houston, TX</td>
+      <td>1639078.0</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+    <div class="colab-df-buttons">
+
+  <div class="colab-df-container">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-8ec3e76b-f5be-4f39-8024-557e83a6a9d9')"
+            title="Convert this dataframe to an interactive table."
+            style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960">
+    <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"/>
+  </svg>
+    </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    .colab-df-buttons div {
+      margin-bottom: 4px;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+    <script>
+      const buttonEl =
+        document.querySelector('#df-8ec3e76b-f5be-4f39-8024-557e83a6a9d9 button.colab-df-convert');
+      buttonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+      async function convertToInteractive(key) {
+        const element = document.querySelector('#df-8ec3e76b-f5be-4f39-8024-557e83a6a9d9');
+        const dataTable =
+          await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                    [key], {});
+        if (!dataTable) return;
+
+        const docLinkHtml = 'Like what you see? Visit the ' +
+          '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+          + ' to learn more about interactive tables.';
+        element.innerHTML = '';
+        dataTable['output_type'] = 'display_data';
+        await google.colab.output.renderOutput(dataTable, element);
+        const docLink = document.createElement('div');
+        docLink.innerHTML = docLinkHtml;
+        element.appendChild(docLink);
+      }
+    </script>
+  </div>
+
+
+<div id="df-8fa6cceb-1d89-4c17-9f61-7b961de56dd5">
+  <button class="colab-df-quickchart" onclick="quickchart('df-8fa6cceb-1d89-4c17-9f61-7b961de56dd5')"
+            title="Suggest charts."
+            style="display:none;">
+
+<svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+     width="24px">
+    <g>
+        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
+    </g>
+</svg>
+  </button>
+
+<style>
+  .colab-df-quickchart {
+      --bg-color: #E8F0FE;
+      --fill-color: #1967D2;
+      --hover-bg-color: #E2EBFA;
+      --hover-fill-color: #174EA6;
+      --disabled-fill-color: #AAA;
+      --disabled-bg-color: #DDD;
+  }
+
+  [theme=dark] .colab-df-quickchart {
+      --bg-color: #3B4455;
+      --fill-color: #D2E3FC;
+      --hover-bg-color: #434B5C;
+      --hover-fill-color: #FFFFFF;
+      --disabled-bg-color: #3B4455;
+      --disabled-fill-color: #666;
+  }
+
+  .colab-df-quickchart {
+    background-color: var(--bg-color);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    fill: var(--fill-color);
+    height: 32px;
+    padding: 0;
+    width: 32px;
+  }
+
+  .colab-df-quickchart:hover {
+    background-color: var(--hover-bg-color);
+    box-shadow: 0 1px 2px rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
+    fill: var(--button-hover-fill-color);
+  }
+
+  .colab-df-quickchart-complete:disabled,
+  .colab-df-quickchart-complete:disabled:hover {
+    background-color: var(--disabled-bg-color);
+    fill: var(--disabled-fill-color);
+    box-shadow: none;
+  }
+
+  .colab-df-spinner {
+    border: 2px solid var(--fill-color);
+    border-color: transparent;
+    border-bottom-color: var(--fill-color);
+    animation:
+      spin 1s steps(1) infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+      border-left-color: var(--fill-color);
+    }
+    20% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    30% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+      border-right-color: var(--fill-color);
+    }
+    40% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    60% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+    }
+    80% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-bottom-color: var(--fill-color);
+    }
+    90% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+    }
+  }
+</style>
+
+  <script>
+    async function quickchart(key) {
+      const quickchartButtonEl =
+        document.querySelector('#' + key + ' button');
+      quickchartButtonEl.disabled = true;  // To prevent multiple clicks.
+      quickchartButtonEl.classList.add('colab-df-spinner');
+      try {
+        const charts = await google.colab.kernel.invokeFunction(
+            'suggestCharts', [key], {});
+      } catch (error) {
+        console.error('Error during call to suggestCharts:', error);
+      }
+      quickchartButtonEl.classList.remove('colab-df-spinner');
+      quickchartButtonEl.classList.add('colab-df-quickchart-complete');
+    }
+    (() => {
+      let quickchartButtonEl =
+        document.querySelector('#df-8fa6cceb-1d89-4c17-9f61-7b961de56dd5 button');
+      quickchartButtonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+    })();
+  </script>
+</div>
+    </div>
+  </div>
+
+</div>
+</div>
+<div class="cell markdown" id="SsSeGK4CHYw9">
+<p>The following stats shows the highest number of Crimes as per
+state:</p>
+<ol>
+<li><p>New York City, New York is recorded highest number of crime state
+in USA. From 1975 to 2023 the crimes included robberies, violent crimes,
+homicides, rapes, and assaults, totally 8.5 Millions crimes are
+recorded.</p></li>
+<li><p>Los Angeles, California is the second highest crime recorded city
+in USA. Total crime from 1975 till 2023 is 3.9 Millions.</p></li>
+<li><p>Chicago, Illinois is the third most crime recoreded state in USA.
+Total crime recorded from 1975 till 2023 is 3.9 Millions.</p></li>
+<li><p>Los Angeles, California and Chicago, Illinois has almost same
+crime record.</p></li>
+<li><p>Detroit, Michigan and Houston, Texas comes on fourth and fifth
+place in the list. 1.8 Millions and 1.6 Millions crime are recorded in
+both the cites. Houstan City has less crime compare to Detroit.</p></li>
+</ol>
+<p><strong>Conclusion</strong>,</p>
+<p>New York City is most crime occuring cites in USA. Good thing is
+other than New York cities there is major drop in crimes in other
+cities. Los Angeles and Chicago has almost the same crime rate, Detroit
+and Houston this two cities has less crimes occured than above 3
+cities.Houstan has 1.6 Millions crime recorded which is lowest among all
+five cities.</p>
+</div>
+<section id="4sort" class="cell markdown" id="NKYE9VNnR9x3">
+<h1><strong><em>4.SORT</em></strong></h1>
+</section>
+<div class="cell markdown" id="0_oToiW_6DBS">
+<p>Created new Data frame called df_1 in which only five are taken which
+are:</p>
+<p>Report Year</p>
+<p>Agency Jurisdiction</p>
+<p>Assaults</p>
+<p>Homicides</p>
+<p>Robberies</p>
+</div>
+<div class="cell code" data-execution_count="9"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:206}"
+id="pnijYQ3eVBAb" data-outputId="25fc10e2-9661-4ade-944a-4b99959ef92b">
+<div class="sourceCode" id="cb15"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb15-1"><a href="#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="co">#creating a new dataframe and printing top 5 records of it</span></span>
+<span id="cb15-2"><a href="#cb15-2" aria-hidden="true" tabindex="-1"></a>df_1 <span class="op">=</span> df.loc[:, [<span class="st">&quot;report_year&quot;</span>, <span class="st">&quot;agency_jurisdiction&quot;</span>,<span class="st">&quot;assaults&quot;</span>, <span class="st">&quot;homicides&quot;</span>,<span class="st">&quot;robberies&quot;</span>]]</span>
+<span id="cb15-3"><a href="#cb15-3" aria-hidden="true" tabindex="-1"></a>df_1.head()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="9">
+
+  <div id="df-f481f228-ac5e-4235-9079-09baf6bd053f" class="colab-df-container">
+    <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>report_year</th>
+      <th>agency_jurisdiction</th>
+      <th>assaults</th>
+      <th>homicides</th>
+      <th>robberies</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1975</td>
+      <td>Albuquerque, NM</td>
+      <td>1353.0</td>
+      <td>30.0</td>
+      <td>819.0</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>1975</td>
+      <td>Arlington, TX</td>
+      <td>132.0</td>
+      <td>5.0</td>
+      <td>113.0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>1975</td>
+      <td>Atlanta, GA</td>
+      <td>3518.0</td>
+      <td>185.0</td>
+      <td>3887.0</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>1975</td>
+      <td>Aurora, CO</td>
+      <td>389.0</td>
+      <td>7.0</td>
+      <td>171.0</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>1975</td>
+      <td>Austin, TX</td>
+      <td>463.0</td>
+      <td>33.0</td>
+      <td>529.0</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+    <div class="colab-df-buttons">
+
+  <div class="colab-df-container">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-f481f228-ac5e-4235-9079-09baf6bd053f')"
+            title="Convert this dataframe to an interactive table."
+            style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960">
+    <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"/>
+  </svg>
+    </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    .colab-df-buttons div {
+      margin-bottom: 4px;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+    <script>
+      const buttonEl =
+        document.querySelector('#df-f481f228-ac5e-4235-9079-09baf6bd053f button.colab-df-convert');
+      buttonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+      async function convertToInteractive(key) {
+        const element = document.querySelector('#df-f481f228-ac5e-4235-9079-09baf6bd053f');
+        const dataTable =
+          await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                    [key], {});
+        if (!dataTable) return;
+
+        const docLinkHtml = 'Like what you see? Visit the ' +
+          '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+          + ' to learn more about interactive tables.';
+        element.innerHTML = '';
+        dataTable['output_type'] = 'display_data';
+        await google.colab.output.renderOutput(dataTable, element);
+        const docLink = document.createElement('div');
+        docLink.innerHTML = docLinkHtml;
+        element.appendChild(docLink);
+      }
+    </script>
+  </div>
+
+
+<div id="df-9b7a90da-3d8c-4b1d-ac60-1d153a95554e">
+  <button class="colab-df-quickchart" onclick="quickchart('df-9b7a90da-3d8c-4b1d-ac60-1d153a95554e')"
+            title="Suggest charts."
+            style="display:none;">
+
+<svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+     width="24px">
+    <g>
+        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
+    </g>
+</svg>
+  </button>
+
+<style>
+  .colab-df-quickchart {
+      --bg-color: #E8F0FE;
+      --fill-color: #1967D2;
+      --hover-bg-color: #E2EBFA;
+      --hover-fill-color: #174EA6;
+      --disabled-fill-color: #AAA;
+      --disabled-bg-color: #DDD;
+  }
+
+  [theme=dark] .colab-df-quickchart {
+      --bg-color: #3B4455;
+      --fill-color: #D2E3FC;
+      --hover-bg-color: #434B5C;
+      --hover-fill-color: #FFFFFF;
+      --disabled-bg-color: #3B4455;
+      --disabled-fill-color: #666;
+  }
+
+  .colab-df-quickchart {
+    background-color: var(--bg-color);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    fill: var(--fill-color);
+    height: 32px;
+    padding: 0;
+    width: 32px;
+  }
+
+  .colab-df-quickchart:hover {
+    background-color: var(--hover-bg-color);
+    box-shadow: 0 1px 2px rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
+    fill: var(--button-hover-fill-color);
+  }
+
+  .colab-df-quickchart-complete:disabled,
+  .colab-df-quickchart-complete:disabled:hover {
+    background-color: var(--disabled-bg-color);
+    fill: var(--disabled-fill-color);
+    box-shadow: none;
+  }
+
+  .colab-df-spinner {
+    border: 2px solid var(--fill-color);
+    border-color: transparent;
+    border-bottom-color: var(--fill-color);
+    animation:
+      spin 1s steps(1) infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+      border-left-color: var(--fill-color);
+    }
+    20% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    30% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+      border-right-color: var(--fill-color);
+    }
+    40% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    60% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+    }
+    80% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-bottom-color: var(--fill-color);
+    }
+    90% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+    }
+  }
+</style>
+
+  <script>
+    async function quickchart(key) {
+      const quickchartButtonEl =
+        document.querySelector('#' + key + ' button');
+      quickchartButtonEl.disabled = true;  // To prevent multiple clicks.
+      quickchartButtonEl.classList.add('colab-df-spinner');
+      try {
+        const charts = await google.colab.kernel.invokeFunction(
+            'suggestCharts', [key], {});
+      } catch (error) {
+        console.error('Error during call to suggestCharts:', error);
+      }
+      quickchartButtonEl.classList.remove('colab-df-spinner');
+      quickchartButtonEl.classList.add('colab-df-quickchart-complete');
+    }
+    (() => {
+      let quickchartButtonEl =
+        document.querySelector('#df-9b7a90da-3d8c-4b1d-ac60-1d153a95554e button');
+      quickchartButtonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+    })();
+  </script>
+</div>
+    </div>
+  </div>
+
+</div>
+</div>
+<div class="cell code" data-execution_count="10"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:237}"
+id="VDV7fab_Y9rJ" data-outputId="527c8faf-1eb6-4473-db4e-2fdb6d221b27">
+<div class="sourceCode" id="cb16"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb16-1"><a href="#cb16-1" aria-hidden="true" tabindex="-1"></a><span class="co">#calculating the highest number of Assaults occured in which city.</span></span>
+<span id="cb16-2"><a href="#cb16-2" aria-hidden="true" tabindex="-1"></a>df_assaults <span class="op">=</span> df_1.sort_values(by<span class="op">=</span><span class="st">&#39;assaults&#39;</span>, ascending<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb16-3"><a href="#cb16-3" aria-hidden="true" tabindex="-1"></a>df_assaults <span class="op">=</span> df_assaults[[<span class="st">&#39;agency_jurisdiction&#39;</span>,<span class="st">&#39;assaults&#39;</span>]]</span>
+<span id="cb16-4"><a href="#cb16-4" aria-hidden="true" tabindex="-1"></a>df_assaults <span class="op">=</span> df_assaults.groupby(<span class="st">&quot;agency_jurisdiction&quot;</span>).<span class="bu">sum</span>()</span>
+<span id="cb16-5"><a href="#cb16-5" aria-hidden="true" tabindex="-1"></a>df_assaults <span class="op">=</span> df_assaults.sort_values(by<span class="op">=</span><span class="st">&#39;assaults&#39;</span>, ascending<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb16-6"><a href="#cb16-6" aria-hidden="true" tabindex="-1"></a>df_assaults.head(<span class="dv">5</span>)</span></code></pre></div>
+<div class="output execute_result" data-execution_count="10">
+
+  <div id="df-fde96864-3b86-4f69-95bd-2b1d02b87f93" class="colab-df-container">
+    <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>assaults</th>
+    </tr>
+    <tr>
+      <th>agency_jurisdiction</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>New York City, NY</th>
+      <td>1788065.0</td>
+    </tr>
+    <tr>
+      <th>Los Angeles, CA</th>
+      <td>1027731.0</td>
+    </tr>
+    <tr>
+      <th>Chicago, IL</th>
+      <td>951805.0</td>
+    </tr>
+    <tr>
+      <th>Detroit, MI</th>
+      <td>420940.0</td>
+    </tr>
+    <tr>
+      <th>Houston, TX</th>
+      <td>367276.0</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+    <div class="colab-df-buttons">
+
+  <div class="colab-df-container">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-fde96864-3b86-4f69-95bd-2b1d02b87f93')"
+            title="Convert this dataframe to an interactive table."
+            style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960">
+    <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"/>
+  </svg>
+    </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    .colab-df-buttons div {
+      margin-bottom: 4px;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+    <script>
+      const buttonEl =
+        document.querySelector('#df-fde96864-3b86-4f69-95bd-2b1d02b87f93 button.colab-df-convert');
+      buttonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+      async function convertToInteractive(key) {
+        const element = document.querySelector('#df-fde96864-3b86-4f69-95bd-2b1d02b87f93');
+        const dataTable =
+          await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                    [key], {});
+        if (!dataTable) return;
+
+        const docLinkHtml = 'Like what you see? Visit the ' +
+          '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+          + ' to learn more about interactive tables.';
+        element.innerHTML = '';
+        dataTable['output_type'] = 'display_data';
+        await google.colab.output.renderOutput(dataTable, element);
+        const docLink = document.createElement('div');
+        docLink.innerHTML = docLinkHtml;
+        element.appendChild(docLink);
+      }
+    </script>
+  </div>
+
+
+<div id="df-f233c218-e5cf-4806-bf7b-8d9be45ca6d5">
+  <button class="colab-df-quickchart" onclick="quickchart('df-f233c218-e5cf-4806-bf7b-8d9be45ca6d5')"
+            title="Suggest charts."
+            style="display:none;">
+
+<svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+     width="24px">
+    <g>
+        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
+    </g>
+</svg>
+  </button>
+
+<style>
+  .colab-df-quickchart {
+      --bg-color: #E8F0FE;
+      --fill-color: #1967D2;
+      --hover-bg-color: #E2EBFA;
+      --hover-fill-color: #174EA6;
+      --disabled-fill-color: #AAA;
+      --disabled-bg-color: #DDD;
+  }
+
+  [theme=dark] .colab-df-quickchart {
+      --bg-color: #3B4455;
+      --fill-color: #D2E3FC;
+      --hover-bg-color: #434B5C;
+      --hover-fill-color: #FFFFFF;
+      --disabled-bg-color: #3B4455;
+      --disabled-fill-color: #666;
+  }
+
+  .colab-df-quickchart {
+    background-color: var(--bg-color);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    fill: var(--fill-color);
+    height: 32px;
+    padding: 0;
+    width: 32px;
+  }
+
+  .colab-df-quickchart:hover {
+    background-color: var(--hover-bg-color);
+    box-shadow: 0 1px 2px rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
+    fill: var(--button-hover-fill-color);
+  }
+
+  .colab-df-quickchart-complete:disabled,
+  .colab-df-quickchart-complete:disabled:hover {
+    background-color: var(--disabled-bg-color);
+    fill: var(--disabled-fill-color);
+    box-shadow: none;
+  }
+
+  .colab-df-spinner {
+    border: 2px solid var(--fill-color);
+    border-color: transparent;
+    border-bottom-color: var(--fill-color);
+    animation:
+      spin 1s steps(1) infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+      border-left-color: var(--fill-color);
+    }
+    20% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    30% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+      border-right-color: var(--fill-color);
+    }
+    40% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    60% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+    }
+    80% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-bottom-color: var(--fill-color);
+    }
+    90% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+    }
+  }
+</style>
+
+  <script>
+    async function quickchart(key) {
+      const quickchartButtonEl =
+        document.querySelector('#' + key + ' button');
+      quickchartButtonEl.disabled = true;  // To prevent multiple clicks.
+      quickchartButtonEl.classList.add('colab-df-spinner');
+      try {
+        const charts = await google.colab.kernel.invokeFunction(
+            'suggestCharts', [key], {});
+      } catch (error) {
+        console.error('Error during call to suggestCharts:', error);
+      }
+      quickchartButtonEl.classList.remove('colab-df-spinner');
+      quickchartButtonEl.classList.add('colab-df-quickchart-complete');
+    }
+    (() => {
+      let quickchartButtonEl =
+        document.querySelector('#df-f233c218-e5cf-4806-bf7b-8d9be45ca6d5 button');
+      quickchartButtonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+    })();
+  </script>
+</div>
+    </div>
+  </div>
+
+</div>
+</div>
+<div class="cell markdown" id="1pwy-WHZ92Zz">
+<p>New York city has highest number of Assaults compare all other
+cities. 1.7 Millions assaults are recoreded in NY. LA and Chicago were
+less than NY which is 1 Millions and 95k Assaults recorded. Detroit and
+Houstan is less then all above cities. This data is from 1975 - 2023</p>
+</div>
+<div class="cell code" data-execution_count="11"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:237}"
+id="sDBtZbaJ83MF" data-outputId="264dce66-85da-4bf6-a4a6-a031e9d1b5fe">
+<div class="sourceCode" id="cb17"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb17-1"><a href="#cb17-1" aria-hidden="true" tabindex="-1"></a><span class="co">#calculating which city has robbery cases from 1975 to 2023</span></span>
+<span id="cb17-2"><a href="#cb17-2" aria-hidden="true" tabindex="-1"></a>df_assaults <span class="op">=</span> df_1.sort_values(by<span class="op">=</span><span class="st">&#39;robberies&#39;</span>, ascending<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb17-3"><a href="#cb17-3" aria-hidden="true" tabindex="-1"></a>df_assaults <span class="op">=</span> df_assaults[[<span class="st">&#39;agency_jurisdiction&#39;</span>,<span class="st">&#39;robberies&#39;</span>]]</span>
+<span id="cb17-4"><a href="#cb17-4" aria-hidden="true" tabindex="-1"></a>df_assaults <span class="op">=</span> df_assaults.groupby(<span class="st">&quot;agency_jurisdiction&quot;</span>).<span class="bu">sum</span>()</span>
+<span id="cb17-5"><a href="#cb17-5" aria-hidden="true" tabindex="-1"></a>df_assaults <span class="op">=</span> df_assaults.sort_values(by<span class="op">=</span><span class="st">&#39;robberies&#39;</span>, ascending<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb17-6"><a href="#cb17-6" aria-hidden="true" tabindex="-1"></a>df_assaults.head(<span class="dv">5</span>)</span></code></pre></div>
+<div class="output execute_result" data-execution_count="11">
+
+  <div id="df-39129099-aba0-4028-b03e-1a128e86db83" class="colab-df-container">
+    <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>robberies</th>
+    </tr>
+    <tr>
+      <th>agency_jurisdiction</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>New York City, NY</th>
+      <td>2326248.0</td>
+    </tr>
+    <tr>
+      <th>Chicago, IL</th>
+      <td>891145.0</td>
+    </tr>
+    <tr>
+      <th>Los Angeles, CA</th>
+      <td>855688.0</td>
+    </tr>
+    <tr>
+      <th>Detroit, MI</th>
+      <td>436709.0</td>
+    </tr>
+    <tr>
+      <th>Philadelphia, PA</th>
+      <td>408967.0</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+    <div class="colab-df-buttons">
+
+  <div class="colab-df-container">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-39129099-aba0-4028-b03e-1a128e86db83')"
+            title="Convert this dataframe to an interactive table."
+            style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960">
+    <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"/>
+  </svg>
+    </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    .colab-df-buttons div {
+      margin-bottom: 4px;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+    <script>
+      const buttonEl =
+        document.querySelector('#df-39129099-aba0-4028-b03e-1a128e86db83 button.colab-df-convert');
+      buttonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+      async function convertToInteractive(key) {
+        const element = document.querySelector('#df-39129099-aba0-4028-b03e-1a128e86db83');
+        const dataTable =
+          await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                    [key], {});
+        if (!dataTable) return;
+
+        const docLinkHtml = 'Like what you see? Visit the ' +
+          '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+          + ' to learn more about interactive tables.';
+        element.innerHTML = '';
+        dataTable['output_type'] = 'display_data';
+        await google.colab.output.renderOutput(dataTable, element);
+        const docLink = document.createElement('div');
+        docLink.innerHTML = docLinkHtml;
+        element.appendChild(docLink);
+      }
+    </script>
+  </div>
+
+
+<div id="df-70670190-7657-4b39-bb21-56a6c36bf969">
+  <button class="colab-df-quickchart" onclick="quickchart('df-70670190-7657-4b39-bb21-56a6c36bf969')"
+            title="Suggest charts."
+            style="display:none;">
+
+<svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+     width="24px">
+    <g>
+        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
+    </g>
+</svg>
+  </button>
+
+<style>
+  .colab-df-quickchart {
+      --bg-color: #E8F0FE;
+      --fill-color: #1967D2;
+      --hover-bg-color: #E2EBFA;
+      --hover-fill-color: #174EA6;
+      --disabled-fill-color: #AAA;
+      --disabled-bg-color: #DDD;
+  }
+
+  [theme=dark] .colab-df-quickchart {
+      --bg-color: #3B4455;
+      --fill-color: #D2E3FC;
+      --hover-bg-color: #434B5C;
+      --hover-fill-color: #FFFFFF;
+      --disabled-bg-color: #3B4455;
+      --disabled-fill-color: #666;
+  }
+
+  .colab-df-quickchart {
+    background-color: var(--bg-color);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    fill: var(--fill-color);
+    height: 32px;
+    padding: 0;
+    width: 32px;
+  }
+
+  .colab-df-quickchart:hover {
+    background-color: var(--hover-bg-color);
+    box-shadow: 0 1px 2px rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
+    fill: var(--button-hover-fill-color);
+  }
+
+  .colab-df-quickchart-complete:disabled,
+  .colab-df-quickchart-complete:disabled:hover {
+    background-color: var(--disabled-bg-color);
+    fill: var(--disabled-fill-color);
+    box-shadow: none;
+  }
+
+  .colab-df-spinner {
+    border: 2px solid var(--fill-color);
+    border-color: transparent;
+    border-bottom-color: var(--fill-color);
+    animation:
+      spin 1s steps(1) infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+      border-left-color: var(--fill-color);
+    }
+    20% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    30% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+      border-right-color: var(--fill-color);
+    }
+    40% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    60% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+    }
+    80% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-bottom-color: var(--fill-color);
+    }
+    90% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+    }
+  }
+</style>
+
+  <script>
+    async function quickchart(key) {
+      const quickchartButtonEl =
+        document.querySelector('#' + key + ' button');
+      quickchartButtonEl.disabled = true;  // To prevent multiple clicks.
+      quickchartButtonEl.classList.add('colab-df-spinner');
+      try {
+        const charts = await google.colab.kernel.invokeFunction(
+            'suggestCharts', [key], {});
+      } catch (error) {
+        console.error('Error during call to suggestCharts:', error);
+      }
+      quickchartButtonEl.classList.remove('colab-df-spinner');
+      quickchartButtonEl.classList.add('colab-df-quickchart-complete');
+    }
+    (() => {
+      let quickchartButtonEl =
+        document.querySelector('#df-70670190-7657-4b39-bb21-56a6c36bf969 button');
+      quickchartButtonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+    })();
+  </script>
+</div>
+    </div>
+  </div>
+
+</div>
+</div>
+<div class="cell markdown" id="LeOoX9fW-y28">
+<p>New New York city has highest number of robbery compare all other
+cities. 2.3 Millions robbery are recoreded in NY. LA and Chicago were
+less than NY which is 89k and 85k robbery recorded. Detroit and Houstan
+is less then all above cities 43k and 40k robbery were recoreded. This
+data is from 1975 - 2023</p>
+</div>
+<div class="cell code" data-execution_count="12"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:206}"
+id="WncsocQVfx_K" data-outputId="9fc5ba99-9ca6-4389-9c42-ea3dd0c5972b">
+<div class="sourceCode" id="cb18"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb18-1"><a href="#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="co">#calculating highest number of robbery for year 2010</span></span>
+<span id="cb18-2"><a href="#cb18-2" aria-hidden="true" tabindex="-1"></a>df_2010 <span class="op">=</span> df_1[df[<span class="st">&#39;report_year&#39;</span>] <span class="op">==</span> <span class="dv">2010</span>]</span>
+<span id="cb18-3"><a href="#cb18-3" aria-hidden="true" tabindex="-1"></a>df_2010 <span class="op">=</span> df_2010.sort_values(by<span class="op">=</span><span class="st">&quot;robberies&quot;</span>, ascending<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb18-4"><a href="#cb18-4" aria-hidden="true" tabindex="-1"></a>df_2010 <span class="op">=</span> df_2010[[<span class="st">&#39;report_year&#39;</span>, <span class="st">&#39;agency_jurisdiction&#39;</span>, <span class="st">&#39;robberies&#39;</span>]]</span>
+<span id="cb18-5"><a href="#cb18-5" aria-hidden="true" tabindex="-1"></a>df_2010.head()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="12">
+
+  <div id="df-8cdf90b1-be2f-48cf-b541-b390bac412fb" class="colab-df-container">
+    <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>report_year</th>
+      <th>agency_jurisdiction</th>
+      <th>robberies</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2456</th>
+      <td>2010</td>
+      <td>New York City, NY</td>
+      <td>19608.0</td>
+    </tr>
+    <tr>
+      <th>2425</th>
+      <td>2010</td>
+      <td>Chicago, IL</td>
+      <td>14213.0</td>
+    </tr>
+    <tr>
+      <th>2444</th>
+      <td>2010</td>
+      <td>Los Angeles, CA</td>
+      <td>10924.0</td>
+    </tr>
+    <tr>
+      <th>2437</th>
+      <td>2010</td>
+      <td>Houston, TX</td>
+      <td>9449.0</td>
+    </tr>
+    <tr>
+      <th>2462</th>
+      <td>2010</td>
+      <td>Philadelphia, PA</td>
+      <td>8363.0</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+    <div class="colab-df-buttons">
+
+  <div class="colab-df-container">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-8cdf90b1-be2f-48cf-b541-b390bac412fb')"
+            title="Convert this dataframe to an interactive table."
+            style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960">
+    <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"/>
+  </svg>
+    </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    .colab-df-buttons div {
+      margin-bottom: 4px;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+    <script>
+      const buttonEl =
+        document.querySelector('#df-8cdf90b1-be2f-48cf-b541-b390bac412fb button.colab-df-convert');
+      buttonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+      async function convertToInteractive(key) {
+        const element = document.querySelector('#df-8cdf90b1-be2f-48cf-b541-b390bac412fb');
+        const dataTable =
+          await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                    [key], {});
+        if (!dataTable) return;
+
+        const docLinkHtml = 'Like what you see? Visit the ' +
+          '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+          + ' to learn more about interactive tables.';
+        element.innerHTML = '';
+        dataTable['output_type'] = 'display_data';
+        await google.colab.output.renderOutput(dataTable, element);
+        const docLink = document.createElement('div');
+        docLink.innerHTML = docLinkHtml;
+        element.appendChild(docLink);
+      }
+    </script>
+  </div>
+
+
+<div id="df-31e71088-e1dc-433f-bbad-533b38e5ed84">
+  <button class="colab-df-quickchart" onclick="quickchart('df-31e71088-e1dc-433f-bbad-533b38e5ed84')"
+            title="Suggest charts."
+            style="display:none;">
+
+<svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+     width="24px">
+    <g>
+        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
+    </g>
+</svg>
+  </button>
+
+<style>
+  .colab-df-quickchart {
+      --bg-color: #E8F0FE;
+      --fill-color: #1967D2;
+      --hover-bg-color: #E2EBFA;
+      --hover-fill-color: #174EA6;
+      --disabled-fill-color: #AAA;
+      --disabled-bg-color: #DDD;
+  }
+
+  [theme=dark] .colab-df-quickchart {
+      --bg-color: #3B4455;
+      --fill-color: #D2E3FC;
+      --hover-bg-color: #434B5C;
+      --hover-fill-color: #FFFFFF;
+      --disabled-bg-color: #3B4455;
+      --disabled-fill-color: #666;
+  }
+
+  .colab-df-quickchart {
+    background-color: var(--bg-color);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    fill: var(--fill-color);
+    height: 32px;
+    padding: 0;
+    width: 32px;
+  }
+
+  .colab-df-quickchart:hover {
+    background-color: var(--hover-bg-color);
+    box-shadow: 0 1px 2px rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
+    fill: var(--button-hover-fill-color);
+  }
+
+  .colab-df-quickchart-complete:disabled,
+  .colab-df-quickchart-complete:disabled:hover {
+    background-color: var(--disabled-bg-color);
+    fill: var(--disabled-fill-color);
+    box-shadow: none;
+  }
+
+  .colab-df-spinner {
+    border: 2px solid var(--fill-color);
+    border-color: transparent;
+    border-bottom-color: var(--fill-color);
+    animation:
+      spin 1s steps(1) infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+      border-left-color: var(--fill-color);
+    }
+    20% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    30% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+      border-right-color: var(--fill-color);
+    }
+    40% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    60% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+    }
+    80% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-bottom-color: var(--fill-color);
+    }
+    90% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+    }
+  }
+</style>
+
+  <script>
+    async function quickchart(key) {
+      const quickchartButtonEl =
+        document.querySelector('#' + key + ' button');
+      quickchartButtonEl.disabled = true;  // To prevent multiple clicks.
+      quickchartButtonEl.classList.add('colab-df-spinner');
+      try {
+        const charts = await google.colab.kernel.invokeFunction(
+            'suggestCharts', [key], {});
+      } catch (error) {
+        console.error('Error during call to suggestCharts:', error);
+      }
+      quickchartButtonEl.classList.remove('colab-df-spinner');
+      quickchartButtonEl.classList.add('colab-df-quickchart-complete');
+    }
+    (() => {
+      let quickchartButtonEl =
+        document.querySelector('#df-31e71088-e1dc-433f-bbad-533b38e5ed84 button');
+      quickchartButtonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+    })();
+  </script>
+</div>
+    </div>
+  </div>
+
+</div>
+</div>
+<div class="cell markdown" id="WNCvVkXR_p7s">
+<p>In 2010 New New York city has recorded highest number of robbery
+compare all other cities. 19.6k robbery are recoreded in NY. Chicago and
+LA were less than NY which is 14.2k and 10.9k robbery recorded. Houstan
+and Philadelphia, Pennsylvania is less then all above cities 9.4k and
+8.3k robbery were recoreded. This data is of year 2010.</p>
+</div>
+<div class="cell code" data-execution_count="13"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:206}"
+id="2C8nx9KCvpdo" data-outputId="2ec89a21-5a31-49b8-f415-46a68120fa55">
+<div class="sourceCode" id="cb19"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb19-1"><a href="#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="co">#calculating highest number of homicides for year 2010</span></span>
+<span id="cb19-2"><a href="#cb19-2" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> df_1[df_1[<span class="st">&#39;report_year&#39;</span>] <span class="op">==</span> <span class="dv">2010</span>]</span>
+<span id="cb19-3"><a href="#cb19-3" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> df.sort_values(by<span class="op">=</span><span class="st">&quot;homicides&quot;</span>, ascending<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb19-4"><a href="#cb19-4" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> df[[<span class="st">&#39;report_year&#39;</span>, <span class="st">&#39;agency_jurisdiction&#39;</span>, <span class="st">&#39;homicides&#39;</span>]]</span>
+<span id="cb19-5"><a href="#cb19-5" aria-hidden="true" tabindex="-1"></a>df.head()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="13">
+
+  <div id="df-5481928e-7985-4a2a-9a82-5155e0891fe5" class="colab-df-container">
+    <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>report_year</th>
+      <th>agency_jurisdiction</th>
+      <th>homicides</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2456</th>
+      <td>2010</td>
+      <td>New York City, NY</td>
+      <td>536.0</td>
+    </tr>
+    <tr>
+      <th>2425</th>
+      <td>2010</td>
+      <td>Chicago, IL</td>
+      <td>432.0</td>
+    </tr>
+    <tr>
+      <th>2431</th>
+      <td>2010</td>
+      <td>Detroit, MI</td>
+      <td>310.0</td>
+    </tr>
+    <tr>
+      <th>2462</th>
+      <td>2010</td>
+      <td>Philadelphia, PA</td>
+      <td>306.0</td>
+    </tr>
+    <tr>
+      <th>2444</th>
+      <td>2010</td>
+      <td>Los Angeles, CA</td>
+      <td>293.0</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+    <div class="colab-df-buttons">
+
+  <div class="colab-df-container">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-5481928e-7985-4a2a-9a82-5155e0891fe5')"
+            title="Convert this dataframe to an interactive table."
+            style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960">
+    <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"/>
+  </svg>
+    </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    .colab-df-buttons div {
+      margin-bottom: 4px;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+    <script>
+      const buttonEl =
+        document.querySelector('#df-5481928e-7985-4a2a-9a82-5155e0891fe5 button.colab-df-convert');
+      buttonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+      async function convertToInteractive(key) {
+        const element = document.querySelector('#df-5481928e-7985-4a2a-9a82-5155e0891fe5');
+        const dataTable =
+          await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                    [key], {});
+        if (!dataTable) return;
+
+        const docLinkHtml = 'Like what you see? Visit the ' +
+          '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+          + ' to learn more about interactive tables.';
+        element.innerHTML = '';
+        dataTable['output_type'] = 'display_data';
+        await google.colab.output.renderOutput(dataTable, element);
+        const docLink = document.createElement('div');
+        docLink.innerHTML = docLinkHtml;
+        element.appendChild(docLink);
+      }
+    </script>
+  </div>
+
+
+<div id="df-847bb42a-748c-4072-95a4-3f377cc8d1be">
+  <button class="colab-df-quickchart" onclick="quickchart('df-847bb42a-748c-4072-95a4-3f377cc8d1be')"
+            title="Suggest charts."
+            style="display:none;">
+
+<svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+     width="24px">
+    <g>
+        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
+    </g>
+</svg>
+  </button>
+
+<style>
+  .colab-df-quickchart {
+      --bg-color: #E8F0FE;
+      --fill-color: #1967D2;
+      --hover-bg-color: #E2EBFA;
+      --hover-fill-color: #174EA6;
+      --disabled-fill-color: #AAA;
+      --disabled-bg-color: #DDD;
+  }
+
+  [theme=dark] .colab-df-quickchart {
+      --bg-color: #3B4455;
+      --fill-color: #D2E3FC;
+      --hover-bg-color: #434B5C;
+      --hover-fill-color: #FFFFFF;
+      --disabled-bg-color: #3B4455;
+      --disabled-fill-color: #666;
+  }
+
+  .colab-df-quickchart {
+    background-color: var(--bg-color);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    fill: var(--fill-color);
+    height: 32px;
+    padding: 0;
+    width: 32px;
+  }
+
+  .colab-df-quickchart:hover {
+    background-color: var(--hover-bg-color);
+    box-shadow: 0 1px 2px rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
+    fill: var(--button-hover-fill-color);
+  }
+
+  .colab-df-quickchart-complete:disabled,
+  .colab-df-quickchart-complete:disabled:hover {
+    background-color: var(--disabled-bg-color);
+    fill: var(--disabled-fill-color);
+    box-shadow: none;
+  }
+
+  .colab-df-spinner {
+    border: 2px solid var(--fill-color);
+    border-color: transparent;
+    border-bottom-color: var(--fill-color);
+    animation:
+      spin 1s steps(1) infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+      border-left-color: var(--fill-color);
+    }
+    20% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    30% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+      border-right-color: var(--fill-color);
+    }
+    40% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    60% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+    }
+    80% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-bottom-color: var(--fill-color);
+    }
+    90% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+    }
+  }
+</style>
+
+  <script>
+    async function quickchart(key) {
+      const quickchartButtonEl =
+        document.querySelector('#' + key + ' button');
+      quickchartButtonEl.disabled = true;  // To prevent multiple clicks.
+      quickchartButtonEl.classList.add('colab-df-spinner');
+      try {
+        const charts = await google.colab.kernel.invokeFunction(
+            'suggestCharts', [key], {});
+      } catch (error) {
+        console.error('Error during call to suggestCharts:', error);
+      }
+      quickchartButtonEl.classList.remove('colab-df-spinner');
+      quickchartButtonEl.classList.add('colab-df-quickchart-complete');
+    }
+    (() => {
+      let quickchartButtonEl =
+        document.querySelector('#df-847bb42a-748c-4072-95a4-3f377cc8d1be button');
+      quickchartButtonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+    })();
+  </script>
+</div>
+    </div>
+  </div>
+
+</div>
+</div>
+<div class="cell markdown" id="WFnQkpEVwFr7">
+<p>In 2010 New New York city has recorded most number of homicides which
+is 536 which is highest compare all other cities. 432 homicides were
+recoreded in Chicago. In Detroit 310 homicides were recorded which is
+lesser then NY and IL. Philadelphia and Los Angeles were fourth and
+fifth in the list of homicides</p>
+</div>
+<div class="cell code" data-execution_count="14"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:206}"
+id="X7RwQMlBwMqj" data-outputId="55bde4a8-d883-4dd6-d01c-882b2203a3c7">
+<div class="sourceCode" id="cb20"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb20-1"><a href="#cb20-1" aria-hidden="true" tabindex="-1"></a><span class="co">#calculating highest number of assaults for year 2010</span></span>
+<span id="cb20-2"><a href="#cb20-2" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> df_1[df_1[<span class="st">&#39;report_year&#39;</span>] <span class="op">==</span> <span class="dv">2010</span>]</span>
+<span id="cb20-3"><a href="#cb20-3" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> df.sort_values(by<span class="op">=</span><span class="st">&quot;assaults&quot;</span>, ascending<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb20-4"><a href="#cb20-4" aria-hidden="true" tabindex="-1"></a>df <span class="op">=</span> df[[<span class="st">&#39;report_year&#39;</span>, <span class="st">&#39;agency_jurisdiction&#39;</span>, <span class="st">&#39;assaults&#39;</span>]]</span>
+<span id="cb20-5"><a href="#cb20-5" aria-hidden="true" tabindex="-1"></a>df.head()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="14">
+
+  <div id="df-890d90ca-04d5-4421-9e68-ee76a3ebb7df" class="colab-df-container">
+    <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>report_year</th>
+      <th>agency_jurisdiction</th>
+      <th>assaults</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2456</th>
+      <td>2010</td>
+      <td>New York City, NY</td>
+      <td>27309.0</td>
+    </tr>
+    <tr>
+      <th>2425</th>
+      <td>2010</td>
+      <td>Chicago, IL</td>
+      <td>13757.0</td>
+    </tr>
+    <tr>
+      <th>2437</th>
+      <td>2010</td>
+      <td>Houston, TX</td>
+      <td>12061.0</td>
+    </tr>
+    <tr>
+      <th>2431</th>
+      <td>2010</td>
+      <td>Detroit, MI</td>
+      <td>10721.0</td>
+    </tr>
+    <tr>
+      <th>2444</th>
+      <td>2010</td>
+      <td>Los Angeles, CA</td>
+      <td>9344.0</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+    <div class="colab-df-buttons">
+
+  <div class="colab-df-container">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-890d90ca-04d5-4421-9e68-ee76a3ebb7df')"
+            title="Convert this dataframe to an interactive table."
+            style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960">
+    <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"/>
+  </svg>
+    </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    .colab-df-buttons div {
+      margin-bottom: 4px;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+    <script>
+      const buttonEl =
+        document.querySelector('#df-890d90ca-04d5-4421-9e68-ee76a3ebb7df button.colab-df-convert');
+      buttonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+      async function convertToInteractive(key) {
+        const element = document.querySelector('#df-890d90ca-04d5-4421-9e68-ee76a3ebb7df');
+        const dataTable =
+          await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                    [key], {});
+        if (!dataTable) return;
+
+        const docLinkHtml = 'Like what you see? Visit the ' +
+          '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+          + ' to learn more about interactive tables.';
+        element.innerHTML = '';
+        dataTable['output_type'] = 'display_data';
+        await google.colab.output.renderOutput(dataTable, element);
+        const docLink = document.createElement('div');
+        docLink.innerHTML = docLinkHtml;
+        element.appendChild(docLink);
+      }
+    </script>
+  </div>
+
+
+<div id="df-54fe09f0-1c9d-4df0-86e3-7de66800f65c">
+  <button class="colab-df-quickchart" onclick="quickchart('df-54fe09f0-1c9d-4df0-86e3-7de66800f65c')"
+            title="Suggest charts."
+            style="display:none;">
+
+<svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+     width="24px">
+    <g>
+        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
+    </g>
+</svg>
+  </button>
+
+<style>
+  .colab-df-quickchart {
+      --bg-color: #E8F0FE;
+      --fill-color: #1967D2;
+      --hover-bg-color: #E2EBFA;
+      --hover-fill-color: #174EA6;
+      --disabled-fill-color: #AAA;
+      --disabled-bg-color: #DDD;
+  }
+
+  [theme=dark] .colab-df-quickchart {
+      --bg-color: #3B4455;
+      --fill-color: #D2E3FC;
+      --hover-bg-color: #434B5C;
+      --hover-fill-color: #FFFFFF;
+      --disabled-bg-color: #3B4455;
+      --disabled-fill-color: #666;
+  }
+
+  .colab-df-quickchart {
+    background-color: var(--bg-color);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    fill: var(--fill-color);
+    height: 32px;
+    padding: 0;
+    width: 32px;
+  }
+
+  .colab-df-quickchart:hover {
+    background-color: var(--hover-bg-color);
+    box-shadow: 0 1px 2px rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
+    fill: var(--button-hover-fill-color);
+  }
+
+  .colab-df-quickchart-complete:disabled,
+  .colab-df-quickchart-complete:disabled:hover {
+    background-color: var(--disabled-bg-color);
+    fill: var(--disabled-fill-color);
+    box-shadow: none;
+  }
+
+  .colab-df-spinner {
+    border: 2px solid var(--fill-color);
+    border-color: transparent;
+    border-bottom-color: var(--fill-color);
+    animation:
+      spin 1s steps(1) infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+      border-left-color: var(--fill-color);
+    }
+    20% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    30% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+      border-right-color: var(--fill-color);
+    }
+    40% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    60% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+    }
+    80% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-bottom-color: var(--fill-color);
+    }
+    90% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+    }
+  }
+</style>
+
+  <script>
+    async function quickchart(key) {
+      const quickchartButtonEl =
+        document.querySelector('#' + key + ' button');
+      quickchartButtonEl.disabled = true;  // To prevent multiple clicks.
+      quickchartButtonEl.classList.add('colab-df-spinner');
+      try {
+        const charts = await google.colab.kernel.invokeFunction(
+            'suggestCharts', [key], {});
+      } catch (error) {
+        console.error('Error during call to suggestCharts:', error);
+      }
+      quickchartButtonEl.classList.remove('colab-df-spinner');
+      quickchartButtonEl.classList.add('colab-df-quickchart-complete');
+    }
+    (() => {
+      let quickchartButtonEl =
+        document.querySelector('#df-54fe09f0-1c9d-4df0-86e3-7de66800f65c button');
+      quickchartButtonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+    })();
+  </script>
+</div>
+    </div>
+  </div>
+
+</div>
+</div>
+<div class="cell markdown" id="1MFfKbWgCKr8">
+<p>In 2010 New New York city has recorded highest number of assaults
+compare all other cities. 27.3k assaults are recoreded in NY. Chicago
+and houstan were less than NY which is 13.7k and 12k assaults recorded.
+Detriot and los angeles, california is less then all above cities 10.7k
+and 9.3k assaults were recoreded. This data is of year 2010.</p>
+</div>
+<section id="5series" class="cell markdown" id="fI0otHWhWn87">
+<h1><strong><em>5.SERIES</em></strong></h1>
+</section>
+<div class="cell markdown" id="2MmzgYmlC0NC">
+<p>we have taken five different columns for the series</p>
+<ol>
+<li><strong>Agency Jurisdiction</strong></li>
+</ol>
+<p>A list of specific US states is represented by "Agency Jurisdiction"
+where various criminal incidents have been reported. This column gives
+important details about the locations where these crimes took place. It
+acts as a crucial point of reference for finding out how reported crimes
+are distributed among the various states, allowing police and officials
+to concentrate their efforts to make city more safe. The analysis of
+this column enables the development of strategies to improve public
+safety and community well being</p>
+<p>2.<strong>Crime Per Capita</strong></p>
+<p>The "Crime Per Capita" column lists various crimes in relation to the
+total US population. By measuring the frequency of crimes per person in
+the population, this metric provides a per capita perspective. It offers
+a more consistent and fair evaluation of crime rates in various areas,
+allowing for useful comparisons. By using "Crime Per Capita," we can
+pinpoint areas with high or low crime rates in relation to population
+size, allowing officials and police to better allocate their
+resources.</p>
+<p>3.<strong>Homicides Percapita</strong></p>
+<p>This homicides per capita shows the number of homicides in the USA as
+a percentage of the population is shown in the "Homicides Per Capita"
+column. By measuring homicides per person in the population, this metric
+offers a per capita perspective. It provides a fair and consistent
+evaluation of homicide rates in various areas, enabling meaningful
+comparisons. We can identify areas with higher or lower homicide rates
+in relation to their population size by using "Homicides Per Capita,"
+which helps with resource allocation and targeted interventions to
+increase public safety.</p>
+<ol>
+<li><strong>Rapes Percapita</strong></li>
+</ol>
+<p>The "Rapes Per Capita" column measures the annual number of rape
+cases in various US states in relation to the total population of the
+nation. This per capita measurement enables a fair evaluation of rape
+rates that takes population size variations into account. It makes it
+possible to compare states meaningfully and to identify regions with
+higher or lower rape rates in relation to their population. "Rapes Per
+Capita" is a vital tool for policymakers and police to pinpoint areas
+where sexual assault is a particular problem and implement specialized
+safety measures.</p>
+<ol>
+<li><strong>Violent Crimes</strong></li>
+</ol>
+<p>Data on various types of crimes that take place in various US states
+are compiled in the "Violent Crimes" column. It includes a variety of
+criminal activities that are distinguished by a threat or potential for
+physical harm. This column provides a thorough analysis of violent crime
+rates in various areas, assisting in the evaluation of public safety and
+the efficiency of law enforcement. Policymakers and law enforcement
+organizations can identify regions with higher or lower violent crime
+rates by analyzing "Violent Crimes," enabling targeted interventions and
+resource allocation to address safety issues.</p>
+</div>
+<div class="cell code" data-execution_count="20"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:206}"
+id="4oOP9JbZWpn5" data-outputId="f7179e23-82be-447e-993a-16da58d47a1a">
+<div class="sourceCode" id="cb21"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb21-1"><a href="#cb21-1" aria-hidden="true" tabindex="-1"></a>df_series <span class="op">=</span> df.loc[:, [<span class="st">&quot;agency_jurisdiction&quot;</span>,<span class="st">&quot;crimes_percapita&quot;</span>,<span class="st">&quot;homicides_percapita&quot;</span>,<span class="st">&quot;rapes_percapita&quot;</span>,<span class="st">&quot;violent_crimes&quot;</span>]]</span>
+<span id="cb21-2"><a href="#cb21-2" aria-hidden="true" tabindex="-1"></a>df_series.head()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="20">
+
+  <div id="df-515eaf19-6dd4-4f6f-8393-fca8c9411fc8" class="colab-df-container">
+    <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>agency_jurisdiction</th>
+      <th>crimes_percapita</th>
+      <th>homicides_percapita</th>
+      <th>rapes_percapita</th>
+      <th>violent_crimes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Albuquerque, NM</td>
+      <td>832.52</td>
+      <td>10.48</td>
+      <td>63.23</td>
+      <td>2383.0</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Arlington, TX</td>
+      <td>247.16</td>
+      <td>4.45</td>
+      <td>24.89</td>
+      <td>278.0</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Atlanta, GA</td>
+      <td>1637.44</td>
+      <td>37.71</td>
+      <td>90.30</td>
+      <td>8033.0</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Aurora, CO</td>
+      <td>523.76</td>
+      <td>6.00</td>
+      <td>37.72</td>
+      <td>611.0</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Austin, TX</td>
+      <td>404.46</td>
+      <td>10.99</td>
+      <td>63.25</td>
+      <td>1215.0</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+    <div class="colab-df-buttons">
+
+  <div class="colab-df-container">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-515eaf19-6dd4-4f6f-8393-fca8c9411fc8')"
+            title="Convert this dataframe to an interactive table."
+            style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960">
+    <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"/>
+  </svg>
+    </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    .colab-df-buttons div {
+      margin-bottom: 4px;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+    <script>
+      const buttonEl =
+        document.querySelector('#df-515eaf19-6dd4-4f6f-8393-fca8c9411fc8 button.colab-df-convert');
+      buttonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+      async function convertToInteractive(key) {
+        const element = document.querySelector('#df-515eaf19-6dd4-4f6f-8393-fca8c9411fc8');
+        const dataTable =
+          await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                    [key], {});
+        if (!dataTable) return;
+
+        const docLinkHtml = 'Like what you see? Visit the ' +
+          '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+          + ' to learn more about interactive tables.';
+        element.innerHTML = '';
+        dataTable['output_type'] = 'display_data';
+        await google.colab.output.renderOutput(dataTable, element);
+        const docLink = document.createElement('div');
+        docLink.innerHTML = docLinkHtml;
+        element.appendChild(docLink);
+      }
+    </script>
+  </div>
+
+
+<div id="df-bcda4237-3f55-4238-bb0d-e203d18d88fe">
+  <button class="colab-df-quickchart" onclick="quickchart('df-bcda4237-3f55-4238-bb0d-e203d18d88fe')"
+            title="Suggest charts."
+            style="display:none;">
+
+<svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+     width="24px">
+    <g>
+        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
+    </g>
+</svg>
+  </button>
+
+<style>
+  .colab-df-quickchart {
+      --bg-color: #E8F0FE;
+      --fill-color: #1967D2;
+      --hover-bg-color: #E2EBFA;
+      --hover-fill-color: #174EA6;
+      --disabled-fill-color: #AAA;
+      --disabled-bg-color: #DDD;
+  }
+
+  [theme=dark] .colab-df-quickchart {
+      --bg-color: #3B4455;
+      --fill-color: #D2E3FC;
+      --hover-bg-color: #434B5C;
+      --hover-fill-color: #FFFFFF;
+      --disabled-bg-color: #3B4455;
+      --disabled-fill-color: #666;
+  }
+
+  .colab-df-quickchart {
+    background-color: var(--bg-color);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    fill: var(--fill-color);
+    height: 32px;
+    padding: 0;
+    width: 32px;
+  }
+
+  .colab-df-quickchart:hover {
+    background-color: var(--hover-bg-color);
+    box-shadow: 0 1px 2px rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
+    fill: var(--button-hover-fill-color);
+  }
+
+  .colab-df-quickchart-complete:disabled,
+  .colab-df-quickchart-complete:disabled:hover {
+    background-color: var(--disabled-bg-color);
+    fill: var(--disabled-fill-color);
+    box-shadow: none;
+  }
+
+  .colab-df-spinner {
+    border: 2px solid var(--fill-color);
+    border-color: transparent;
+    border-bottom-color: var(--fill-color);
+    animation:
+      spin 1s steps(1) infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+      border-left-color: var(--fill-color);
+    }
+    20% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    30% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+      border-right-color: var(--fill-color);
+    }
+    40% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    60% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+    }
+    80% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-bottom-color: var(--fill-color);
+    }
+    90% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+    }
+  }
+</style>
+
+  <script>
+    async function quickchart(key) {
+      const quickchartButtonEl =
+        document.querySelector('#' + key + ' button');
+      quickchartButtonEl.disabled = true;  // To prevent multiple clicks.
+      quickchartButtonEl.classList.add('colab-df-spinner');
+      try {
+        const charts = await google.colab.kernel.invokeFunction(
+            'suggestCharts', [key], {});
+      } catch (error) {
+        console.error('Error during call to suggestCharts:', error);
+      }
+      quickchartButtonEl.classList.remove('colab-df-spinner');
+      quickchartButtonEl.classList.add('colab-df-quickchart-complete');
+    }
+    (() => {
+      let quickchartButtonEl =
+        document.querySelector('#df-bcda4237-3f55-4238-bb0d-e203d18d88fe button');
+      quickchartButtonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+    })();
+  </script>
+</div>
+    </div>
+  </div>
+
+</div>
+</div>
+<div class="cell code" data-execution_count="27"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:237}"
+id="LRjM-Cu3Z8Wn" data-outputId="8b6926a2-45de-4c51-aa27-8b062cf413c0">
+<div class="sourceCode" id="cb22"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb22-1"><a href="#cb22-1" aria-hidden="true" tabindex="-1"></a><span class="co">#calculating highest crimes per capita</span></span>
+<span id="cb22-2"><a href="#cb22-2" aria-hidden="true" tabindex="-1"></a>df_series <span class="op">=</span> df[[<span class="st">&#39;agency_jurisdiction&#39;</span>, <span class="st">&#39;crimes_percapita&#39;</span>]]</span>
+<span id="cb22-3"><a href="#cb22-3" aria-hidden="true" tabindex="-1"></a>df_series <span class="op">=</span> df_series.groupby(<span class="st">&quot;agency_jurisdiction&quot;</span>).<span class="bu">sum</span>()</span>
+<span id="cb22-4"><a href="#cb22-4" aria-hidden="true" tabindex="-1"></a>df_series <span class="op">=</span> df_series.sort_values(by<span class="op">=</span><span class="st">&#39;crimes_percapita&#39;</span>, ascending<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb22-5"><a href="#cb22-5" aria-hidden="true" tabindex="-1"></a>df_series.head()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="27">
+
+  <div id="df-83679112-0143-4286-9252-596ab345e568" class="colab-df-container">
+    <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>crimes_percapita</th>
+    </tr>
+    <tr>
+      <th>agency_jurisdiction</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Atlanta, GA</th>
+      <td>99462.95</td>
+    </tr>
+    <tr>
+      <th>St. Louis, MO</th>
+      <td>96328.02</td>
+    </tr>
+    <tr>
+      <th>Miami, FL</th>
+      <td>96214.37</td>
+    </tr>
+    <tr>
+      <th>Newark, NJ</th>
+      <td>91737.63</td>
+    </tr>
+    <tr>
+      <th>Detroit, MI</th>
+      <td>90957.88</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+    <div class="colab-df-buttons">
+
+  <div class="colab-df-container">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-83679112-0143-4286-9252-596ab345e568')"
+            title="Convert this dataframe to an interactive table."
+            style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960">
+    <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"/>
+  </svg>
+    </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    .colab-df-buttons div {
+      margin-bottom: 4px;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+    <script>
+      const buttonEl =
+        document.querySelector('#df-83679112-0143-4286-9252-596ab345e568 button.colab-df-convert');
+      buttonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+      async function convertToInteractive(key) {
+        const element = document.querySelector('#df-83679112-0143-4286-9252-596ab345e568');
+        const dataTable =
+          await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                    [key], {});
+        if (!dataTable) return;
+
+        const docLinkHtml = 'Like what you see? Visit the ' +
+          '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+          + ' to learn more about interactive tables.';
+        element.innerHTML = '';
+        dataTable['output_type'] = 'display_data';
+        await google.colab.output.renderOutput(dataTable, element);
+        const docLink = document.createElement('div');
+        docLink.innerHTML = docLinkHtml;
+        element.appendChild(docLink);
+      }
+    </script>
+  </div>
+
+
+<div id="df-038a396e-5c19-4d30-a1cd-37c174a765e4">
+  <button class="colab-df-quickchart" onclick="quickchart('df-038a396e-5c19-4d30-a1cd-37c174a765e4')"
+            title="Suggest charts."
+            style="display:none;">
+
+<svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+     width="24px">
+    <g>
+        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
+    </g>
+</svg>
+  </button>
+
+<style>
+  .colab-df-quickchart {
+      --bg-color: #E8F0FE;
+      --fill-color: #1967D2;
+      --hover-bg-color: #E2EBFA;
+      --hover-fill-color: #174EA6;
+      --disabled-fill-color: #AAA;
+      --disabled-bg-color: #DDD;
+  }
+
+  [theme=dark] .colab-df-quickchart {
+      --bg-color: #3B4455;
+      --fill-color: #D2E3FC;
+      --hover-bg-color: #434B5C;
+      --hover-fill-color: #FFFFFF;
+      --disabled-bg-color: #3B4455;
+      --disabled-fill-color: #666;
+  }
+
+  .colab-df-quickchart {
+    background-color: var(--bg-color);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    fill: var(--fill-color);
+    height: 32px;
+    padding: 0;
+    width: 32px;
+  }
+
+  .colab-df-quickchart:hover {
+    background-color: var(--hover-bg-color);
+    box-shadow: 0 1px 2px rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
+    fill: var(--button-hover-fill-color);
+  }
+
+  .colab-df-quickchart-complete:disabled,
+  .colab-df-quickchart-complete:disabled:hover {
+    background-color: var(--disabled-bg-color);
+    fill: var(--disabled-fill-color);
+    box-shadow: none;
+  }
+
+  .colab-df-spinner {
+    border: 2px solid var(--fill-color);
+    border-color: transparent;
+    border-bottom-color: var(--fill-color);
+    animation:
+      spin 1s steps(1) infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+      border-left-color: var(--fill-color);
+    }
+    20% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    30% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+      border-right-color: var(--fill-color);
+    }
+    40% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    60% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+    }
+    80% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-bottom-color: var(--fill-color);
+    }
+    90% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+    }
+  }
+</style>
+
+  <script>
+    async function quickchart(key) {
+      const quickchartButtonEl =
+        document.querySelector('#' + key + ' button');
+      quickchartButtonEl.disabled = true;  // To prevent multiple clicks.
+      quickchartButtonEl.classList.add('colab-df-spinner');
+      try {
+        const charts = await google.colab.kernel.invokeFunction(
+            'suggestCharts', [key], {});
+      } catch (error) {
+        console.error('Error during call to suggestCharts:', error);
+      }
+      quickchartButtonEl.classList.remove('colab-df-spinner');
+      quickchartButtonEl.classList.add('colab-df-quickchart-complete');
+    }
+    (() => {
+      let quickchartButtonEl =
+        document.querySelector('#df-038a396e-5c19-4d30-a1cd-37c174a765e4 button');
+      quickchartButtonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+    })();
+  </script>
+</div>
+    </div>
+  </div>
+
+</div>
+</div>
+<div class="cell markdown" id="RfXHUWi3NzJU">
+<p>Atlanta city has the crimes per capita among all states in USA.
+Crimes per capita is 99k which is highest among all the states. St.
+Louis is the second highest state which is recorded 96k little lower
+than Atlanta. Miami,Newark and Detroit has 96k 91k and 90k crimes per
+capita. This data is of 1975 till 2023</p>
+</div>
+<div class="cell code" data-execution_count="22"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:237}"
+id="XsdlCRe5j8tk" data-outputId="264a4e5f-65dd-4d23-f42d-9fba1bf76161">
+<div class="sourceCode" id="cb23"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb23-1"><a href="#cb23-1" aria-hidden="true" tabindex="-1"></a><span class="co">#calculating highest homicides per capita</span></span>
+<span id="cb23-2"><a href="#cb23-2" aria-hidden="true" tabindex="-1"></a>df_series <span class="op">=</span> df[[<span class="st">&#39;agency_jurisdiction&#39;</span>, <span class="st">&#39;homicides_percapita&#39;</span>]]</span>
+<span id="cb23-3"><a href="#cb23-3" aria-hidden="true" tabindex="-1"></a>df_series <span class="op">=</span> df_series.groupby(<span class="st">&quot;agency_jurisdiction&quot;</span>).<span class="bu">sum</span>()</span>
+<span id="cb23-4"><a href="#cb23-4" aria-hidden="true" tabindex="-1"></a>df_series <span class="op">=</span> df_series.sort_values(by<span class="op">=</span><span class="st">&#39;homicides_percapita&#39;</span>, ascending<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb23-5"><a href="#cb23-5" aria-hidden="true" tabindex="-1"></a>df_series.head()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="22">
+
+  <div id="df-d307ed18-df73-4110-b6a2-55b421c96751" class="colab-df-container">
+    <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>homicides_percapita</th>
+    </tr>
+    <tr>
+      <th>agency_jurisdiction</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>New Orleans, LA</th>
+      <td>1997.11</td>
+    </tr>
+    <tr>
+      <th>Detroit, MI</th>
+      <td>1928.10</td>
+    </tr>
+    <tr>
+      <th>St. Louis, MO</th>
+      <td>1758.10</td>
+    </tr>
+    <tr>
+      <th>Washington, DC</th>
+      <td>1660.97</td>
+    </tr>
+    <tr>
+      <th>Baltimore, MD</th>
+      <td>1501.34</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+    <div class="colab-df-buttons">
+
+  <div class="colab-df-container">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-d307ed18-df73-4110-b6a2-55b421c96751')"
+            title="Convert this dataframe to an interactive table."
+            style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960">
+    <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"/>
+  </svg>
+    </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    .colab-df-buttons div {
+      margin-bottom: 4px;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+    <script>
+      const buttonEl =
+        document.querySelector('#df-d307ed18-df73-4110-b6a2-55b421c96751 button.colab-df-convert');
+      buttonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+      async function convertToInteractive(key) {
+        const element = document.querySelector('#df-d307ed18-df73-4110-b6a2-55b421c96751');
+        const dataTable =
+          await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                    [key], {});
+        if (!dataTable) return;
+
+        const docLinkHtml = 'Like what you see? Visit the ' +
+          '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+          + ' to learn more about interactive tables.';
+        element.innerHTML = '';
+        dataTable['output_type'] = 'display_data';
+        await google.colab.output.renderOutput(dataTable, element);
+        const docLink = document.createElement('div');
+        docLink.innerHTML = docLinkHtml;
+        element.appendChild(docLink);
+      }
+    </script>
+  </div>
+
+
+<div id="df-d634216a-c5f1-4b01-bfee-e6e725422db5">
+  <button class="colab-df-quickchart" onclick="quickchart('df-d634216a-c5f1-4b01-bfee-e6e725422db5')"
+            title="Suggest charts."
+            style="display:none;">
+
+<svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+     width="24px">
+    <g>
+        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
+    </g>
+</svg>
+  </button>
+
+<style>
+  .colab-df-quickchart {
+      --bg-color: #E8F0FE;
+      --fill-color: #1967D2;
+      --hover-bg-color: #E2EBFA;
+      --hover-fill-color: #174EA6;
+      --disabled-fill-color: #AAA;
+      --disabled-bg-color: #DDD;
+  }
+
+  [theme=dark] .colab-df-quickchart {
+      --bg-color: #3B4455;
+      --fill-color: #D2E3FC;
+      --hover-bg-color: #434B5C;
+      --hover-fill-color: #FFFFFF;
+      --disabled-bg-color: #3B4455;
+      --disabled-fill-color: #666;
+  }
+
+  .colab-df-quickchart {
+    background-color: var(--bg-color);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    fill: var(--fill-color);
+    height: 32px;
+    padding: 0;
+    width: 32px;
+  }
+
+  .colab-df-quickchart:hover {
+    background-color: var(--hover-bg-color);
+    box-shadow: 0 1px 2px rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
+    fill: var(--button-hover-fill-color);
+  }
+
+  .colab-df-quickchart-complete:disabled,
+  .colab-df-quickchart-complete:disabled:hover {
+    background-color: var(--disabled-bg-color);
+    fill: var(--disabled-fill-color);
+    box-shadow: none;
+  }
+
+  .colab-df-spinner {
+    border: 2px solid var(--fill-color);
+    border-color: transparent;
+    border-bottom-color: var(--fill-color);
+    animation:
+      spin 1s steps(1) infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+      border-left-color: var(--fill-color);
+    }
+    20% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    30% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+      border-right-color: var(--fill-color);
+    }
+    40% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    60% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+    }
+    80% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-bottom-color: var(--fill-color);
+    }
+    90% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+    }
+  }
+</style>
+
+  <script>
+    async function quickchart(key) {
+      const quickchartButtonEl =
+        document.querySelector('#' + key + ' button');
+      quickchartButtonEl.disabled = true;  // To prevent multiple clicks.
+      quickchartButtonEl.classList.add('colab-df-spinner');
+      try {
+        const charts = await google.colab.kernel.invokeFunction(
+            'suggestCharts', [key], {});
+      } catch (error) {
+        console.error('Error during call to suggestCharts:', error);
+      }
+      quickchartButtonEl.classList.remove('colab-df-spinner');
+      quickchartButtonEl.classList.add('colab-df-quickchart-complete');
+    }
+    (() => {
+      let quickchartButtonEl =
+        document.querySelector('#df-d634216a-c5f1-4b01-bfee-e6e725422db5 button');
+      quickchartButtonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+    })();
+  </script>
+</div>
+    </div>
+  </div>
+
+</div>
+</div>
+<div class="cell markdown" id="ggYOkWQEOsb_">
+<p>New Orleans city has the highest homicides per capita among all
+states in USA. homicides rates are 1997.11 which is highest among all
+the states. Detroi is the second highest state which is recorded 1928.10
+little lower than New Orleans. St. Louis,Washington and Baltimore has
+1758.10 1660.97 and 1501.34 homicides per capita. This data is of 1975
+till 2023</p>
+</div>
+<div class="cell code" data-execution_count="23"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:237}"
+id="0d7ZEMJ4kZMc" data-outputId="0b0b6d21-73c0-401c-b87c-e8807d192113">
+<div class="sourceCode" id="cb24"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a><span class="co">#calculating highest rapes per capita</span></span>
+<span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a>df_series <span class="op">=</span> df[[<span class="st">&#39;agency_jurisdiction&#39;</span>,<span class="st">&#39;rapes_percapita&#39;</span>]]</span>
+<span id="cb24-3"><a href="#cb24-3" aria-hidden="true" tabindex="-1"></a>df_series <span class="op">=</span> df_series.groupby(<span class="st">&quot;agency_jurisdiction&quot;</span>).<span class="bu">sum</span>()</span>
+<span id="cb24-4"><a href="#cb24-4" aria-hidden="true" tabindex="-1"></a>df_series <span class="op">=</span> df_series.sort_values(by<span class="op">=</span><span class="st">&#39;rapes_percapita&#39;</span>, ascending<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb24-5"><a href="#cb24-5" aria-hidden="true" tabindex="-1"></a>df_series.head()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="23">
+
+  <div id="df-b03747cd-5e01-405b-92e6-f880d1ff315a" class="colab-df-container">
+    <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>rapes_percapita</th>
+    </tr>
+    <tr>
+      <th>agency_jurisdiction</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Cleveland, OH</th>
+      <td>4816.48</td>
+    </tr>
+    <tr>
+      <th>Minneapolis, MN</th>
+      <td>4735.43</td>
+    </tr>
+    <tr>
+      <th>Memphis, TN</th>
+      <td>3988.40</td>
+    </tr>
+    <tr>
+      <th>Atlanta, GA</th>
+      <td>3969.46</td>
+    </tr>
+    <tr>
+      <th>Detroit, MI</th>
+      <td>3929.00</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+    <div class="colab-df-buttons">
+
+  <div class="colab-df-container">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-b03747cd-5e01-405b-92e6-f880d1ff315a')"
+            title="Convert this dataframe to an interactive table."
+            style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960">
+    <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"/>
+  </svg>
+    </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    .colab-df-buttons div {
+      margin-bottom: 4px;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+    <script>
+      const buttonEl =
+        document.querySelector('#df-b03747cd-5e01-405b-92e6-f880d1ff315a button.colab-df-convert');
+      buttonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+      async function convertToInteractive(key) {
+        const element = document.querySelector('#df-b03747cd-5e01-405b-92e6-f880d1ff315a');
+        const dataTable =
+          await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                    [key], {});
+        if (!dataTable) return;
+
+        const docLinkHtml = 'Like what you see? Visit the ' +
+          '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+          + ' to learn more about interactive tables.';
+        element.innerHTML = '';
+        dataTable['output_type'] = 'display_data';
+        await google.colab.output.renderOutput(dataTable, element);
+        const docLink = document.createElement('div');
+        docLink.innerHTML = docLinkHtml;
+        element.appendChild(docLink);
+      }
+    </script>
+  </div>
+
+
+<div id="df-8fd11124-9a10-4934-9814-9d80e46c0f5d">
+  <button class="colab-df-quickchart" onclick="quickchart('df-8fd11124-9a10-4934-9814-9d80e46c0f5d')"
+            title="Suggest charts."
+            style="display:none;">
+
+<svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+     width="24px">
+    <g>
+        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
+    </g>
+</svg>
+  </button>
+
+<style>
+  .colab-df-quickchart {
+      --bg-color: #E8F0FE;
+      --fill-color: #1967D2;
+      --hover-bg-color: #E2EBFA;
+      --hover-fill-color: #174EA6;
+      --disabled-fill-color: #AAA;
+      --disabled-bg-color: #DDD;
+  }
+
+  [theme=dark] .colab-df-quickchart {
+      --bg-color: #3B4455;
+      --fill-color: #D2E3FC;
+      --hover-bg-color: #434B5C;
+      --hover-fill-color: #FFFFFF;
+      --disabled-bg-color: #3B4455;
+      --disabled-fill-color: #666;
+  }
+
+  .colab-df-quickchart {
+    background-color: var(--bg-color);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    fill: var(--fill-color);
+    height: 32px;
+    padding: 0;
+    width: 32px;
+  }
+
+  .colab-df-quickchart:hover {
+    background-color: var(--hover-bg-color);
+    box-shadow: 0 1px 2px rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
+    fill: var(--button-hover-fill-color);
+  }
+
+  .colab-df-quickchart-complete:disabled,
+  .colab-df-quickchart-complete:disabled:hover {
+    background-color: var(--disabled-bg-color);
+    fill: var(--disabled-fill-color);
+    box-shadow: none;
+  }
+
+  .colab-df-spinner {
+    border: 2px solid var(--fill-color);
+    border-color: transparent;
+    border-bottom-color: var(--fill-color);
+    animation:
+      spin 1s steps(1) infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+      border-left-color: var(--fill-color);
+    }
+    20% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    30% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+      border-right-color: var(--fill-color);
+    }
+    40% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    60% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+    }
+    80% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-bottom-color: var(--fill-color);
+    }
+    90% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+    }
+  }
+</style>
+
+  <script>
+    async function quickchart(key) {
+      const quickchartButtonEl =
+        document.querySelector('#' + key + ' button');
+      quickchartButtonEl.disabled = true;  // To prevent multiple clicks.
+      quickchartButtonEl.classList.add('colab-df-spinner');
+      try {
+        const charts = await google.colab.kernel.invokeFunction(
+            'suggestCharts', [key], {});
+      } catch (error) {
+        console.error('Error during call to suggestCharts:', error);
+      }
+      quickchartButtonEl.classList.remove('colab-df-spinner');
+      quickchartButtonEl.classList.add('colab-df-quickchart-complete');
+    }
+    (() => {
+      let quickchartButtonEl =
+        document.querySelector('#df-8fd11124-9a10-4934-9814-9d80e46c0f5d button');
+      quickchartButtonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+    })();
+  </script>
+</div>
+    </div>
+  </div>
+
+</div>
+</div>
+<div class="cell markdown" id="qK4vTAU7QimN">
+<p>Cleveland city has seen the highest rapes per capita in USA which is
+4816. Minneapolis has the second highest Memphis Atlanta and Detroiot is
+the top 5 rapes per capita states in USA</p>
+</div>
+<div class="cell code" data-execution_count="31"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:237}"
+id="e-IXMlATkYuy" data-outputId="6bf98df5-84ca-48d2-cb21-3f6cc21484b6">
+<div class="sourceCode" id="cb25"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb25-1"><a href="#cb25-1" aria-hidden="true" tabindex="-1"></a><span class="co">#calculating highest violent crimes per capita</span></span>
+<span id="cb25-2"><a href="#cb25-2" aria-hidden="true" tabindex="-1"></a>df_series <span class="op">=</span> df[[<span class="st">&#39;agency_jurisdiction&#39;</span>,<span class="st">&#39;violent_crimes&#39;</span>]]</span>
+<span id="cb25-3"><a href="#cb25-3" aria-hidden="true" tabindex="-1"></a>df_series <span class="op">=</span> df_series.groupby(<span class="st">&quot;agency_jurisdiction&quot;</span>).<span class="bu">sum</span>()</span>
+<span id="cb25-4"><a href="#cb25-4" aria-hidden="true" tabindex="-1"></a>df_series <span class="op">=</span> df_series.sort_values(by<span class="op">=</span><span class="st">&#39;violent_crimes&#39;</span>, ascending<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb25-5"><a href="#cb25-5" aria-hidden="true" tabindex="-1"></a>df_series.head()</span></code></pre></div>
+<div class="output execute_result" data-execution_count="31">
+
+  <div id="df-72fe549d-9089-418e-915b-ddbe3a58e437" class="colab-df-container">
+    <div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>violent_crimes</th>
+    </tr>
+    <tr>
+      <th>agency_jurisdiction</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>New York City, NY</th>
+      <td>4263284.0</td>
+    </tr>
+    <tr>
+      <th>Los Angeles, CA</th>
+      <td>1979166.0</td>
+    </tr>
+    <tr>
+      <th>Chicago, IL</th>
+      <td>1960886.0</td>
+    </tr>
+    <tr>
+      <th>Detroit, MI</th>
+      <td>918003.0</td>
+    </tr>
+    <tr>
+      <th>Houston, TX</th>
+      <td>819539.0</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+    <div class="colab-df-buttons">
+
+  <div class="colab-df-container">
+    <button class="colab-df-convert" onclick="convertToInteractive('df-72fe549d-9089-418e-915b-ddbe3a58e437')"
+            title="Convert this dataframe to an interactive table."
+            style="display:none;">
+
+  <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960">
+    <path d="M120-120v-720h720v720H120Zm60-500h600v-160H180v160Zm220 220h160v-160H400v160Zm0 220h160v-160H400v160ZM180-400h160v-160H180v160Zm440 0h160v-160H620v160ZM180-180h160v-160H180v160Zm440 0h160v-160H620v160Z"/>
+  </svg>
+    </button>
+
+  <style>
+    .colab-df-container {
+      display:flex;
+      gap: 12px;
+    }
+
+    .colab-df-convert {
+      background-color: #E8F0FE;
+      border: none;
+      border-radius: 50%;
+      cursor: pointer;
+      display: none;
+      fill: #1967D2;
+      height: 32px;
+      padding: 0 0 0 0;
+      width: 32px;
+    }
+
+    .colab-df-convert:hover {
+      background-color: #E2EBFA;
+      box-shadow: 0px 1px 2px rgba(60, 64, 67, 0.3), 0px 1px 3px 1px rgba(60, 64, 67, 0.15);
+      fill: #174EA6;
+    }
+
+    .colab-df-buttons div {
+      margin-bottom: 4px;
+    }
+
+    [theme=dark] .colab-df-convert {
+      background-color: #3B4455;
+      fill: #D2E3FC;
+    }
+
+    [theme=dark] .colab-df-convert:hover {
+      background-color: #434B5C;
+      box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+      filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+      fill: #FFFFFF;
+    }
+  </style>
+
+    <script>
+      const buttonEl =
+        document.querySelector('#df-72fe549d-9089-418e-915b-ddbe3a58e437 button.colab-df-convert');
+      buttonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+
+      async function convertToInteractive(key) {
+        const element = document.querySelector('#df-72fe549d-9089-418e-915b-ddbe3a58e437');
+        const dataTable =
+          await google.colab.kernel.invokeFunction('convertToInteractive',
+                                                    [key], {});
+        if (!dataTable) return;
+
+        const docLinkHtml = 'Like what you see? Visit the ' +
+          '<a target="_blank" href=https://colab.research.google.com/notebooks/data_table.ipynb>data table notebook</a>'
+          + ' to learn more about interactive tables.';
+        element.innerHTML = '';
+        dataTable['output_type'] = 'display_data';
+        await google.colab.output.renderOutput(dataTable, element);
+        const docLink = document.createElement('div');
+        docLink.innerHTML = docLinkHtml;
+        element.appendChild(docLink);
+      }
+    </script>
+  </div>
+
+
+<div id="df-d45c35ba-d82f-4109-a9f2-effb1429fc2b">
+  <button class="colab-df-quickchart" onclick="quickchart('df-d45c35ba-d82f-4109-a9f2-effb1429fc2b')"
+            title="Suggest charts."
+            style="display:none;">
+
+<svg xmlns="http://www.w3.org/2000/svg" height="24px"viewBox="0 0 24 24"
+     width="24px">
+    <g>
+        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
+    </g>
+</svg>
+  </button>
+
+<style>
+  .colab-df-quickchart {
+      --bg-color: #E8F0FE;
+      --fill-color: #1967D2;
+      --hover-bg-color: #E2EBFA;
+      --hover-fill-color: #174EA6;
+      --disabled-fill-color: #AAA;
+      --disabled-bg-color: #DDD;
+  }
+
+  [theme=dark] .colab-df-quickchart {
+      --bg-color: #3B4455;
+      --fill-color: #D2E3FC;
+      --hover-bg-color: #434B5C;
+      --hover-fill-color: #FFFFFF;
+      --disabled-bg-color: #3B4455;
+      --disabled-fill-color: #666;
+  }
+
+  .colab-df-quickchart {
+    background-color: var(--bg-color);
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    fill: var(--fill-color);
+    height: 32px;
+    padding: 0;
+    width: 32px;
+  }
+
+  .colab-df-quickchart:hover {
+    background-color: var(--hover-bg-color);
+    box-shadow: 0 1px 2px rgba(60, 64, 67, 0.3), 0 1px 3px 1px rgba(60, 64, 67, 0.15);
+    fill: var(--button-hover-fill-color);
+  }
+
+  .colab-df-quickchart-complete:disabled,
+  .colab-df-quickchart-complete:disabled:hover {
+    background-color: var(--disabled-bg-color);
+    fill: var(--disabled-fill-color);
+    box-shadow: none;
+  }
+
+  .colab-df-spinner {
+    border: 2px solid var(--fill-color);
+    border-color: transparent;
+    border-bottom-color: var(--fill-color);
+    animation:
+      spin 1s steps(1) infinite;
+  }
+
+  @keyframes spin {
+    0% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+      border-left-color: var(--fill-color);
+    }
+    20% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    30% {
+      border-color: transparent;
+      border-left-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+      border-right-color: var(--fill-color);
+    }
+    40% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-top-color: var(--fill-color);
+    }
+    60% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+    }
+    80% {
+      border-color: transparent;
+      border-right-color: var(--fill-color);
+      border-bottom-color: var(--fill-color);
+    }
+    90% {
+      border-color: transparent;
+      border-bottom-color: var(--fill-color);
+    }
+  }
+</style>
+
+  <script>
+    async function quickchart(key) {
+      const quickchartButtonEl =
+        document.querySelector('#' + key + ' button');
+      quickchartButtonEl.disabled = true;  // To prevent multiple clicks.
+      quickchartButtonEl.classList.add('colab-df-spinner');
+      try {
+        const charts = await google.colab.kernel.invokeFunction(
+            'suggestCharts', [key], {});
+      } catch (error) {
+        console.error('Error during call to suggestCharts:', error);
+      }
+      quickchartButtonEl.classList.remove('colab-df-spinner');
+      quickchartButtonEl.classList.add('colab-df-quickchart-complete');
+    }
+    (() => {
+      let quickchartButtonEl =
+        document.querySelector('#df-d45c35ba-d82f-4109-a9f2-effb1429fc2b button');
+      quickchartButtonEl.style.display =
+        google.colab.kernel.accessAllowed ? 'block' : 'none';
+    })();
+  </script>
+</div>
+    </div>
+  </div>
+
+</div>
+</div>
+<div class="cell markdown" id="opzsCNFeRGmS">
+<p>New York is the highest on violent crimes which is recorded 42k. LA
+is the second number violent crimes. But we can see significant decrease
+the numbers.LA is the second highest whuch is recorded 19k. Chicago,
+Detriot and Houston are the third on the list</p>
+</div>
+<section id="6plot" class="cell markdown" id="tKrhJJgplNZf">
+<h1><strong><em>6.PLOT</em></strong></h1>
+</section>
+<div class="cell code" data-execution_count="36"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:564}"
+id="0leZEfP_QHrz" data-outputId="ef737274-74a8-4fdf-e834-22e42e418708">
+<div class="sourceCode" id="cb26"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb26-1"><a href="#cb26-1" aria-hidden="true" tabindex="-1"></a><span class="co">#Plotting graph of Violet crimes from 1975-2023</span></span>
+<span id="cb26-2"><a href="#cb26-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb26-3"><a href="#cb26-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-4"><a href="#cb26-4" aria-hidden="true" tabindex="-1"></a>years <span class="op">=</span> df[<span class="st">&#39;report_year&#39;</span>]</span>
+<span id="cb26-5"><a href="#cb26-5" aria-hidden="true" tabindex="-1"></a>violent_crimes <span class="op">=</span> df[<span class="st">&#39;violent_crimes&#39;</span>]</span>
+<span id="cb26-6"><a href="#cb26-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-7"><a href="#cb26-7" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">12</span>, <span class="dv">6</span>))</span>
+<span id="cb26-8"><a href="#cb26-8" aria-hidden="true" tabindex="-1"></a>plt.plot(years, violent_crimes, marker<span class="op">=</span><span class="st">&#39;o&#39;</span>, linestyle<span class="op">=</span><span class="st">&#39;-&#39;</span>, color<span class="op">=</span><span class="st">&#39;blue&#39;</span>, markersize<span class="op">=</span><span class="dv">5</span>, label<span class="op">=</span><span class="st">&#39;Violent Crimes&#39;</span>)</span>
+<span id="cb26-9"><a href="#cb26-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-10"><a href="#cb26-10" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">&#39;Year&#39;</span>)</span>
+<span id="cb26-11"><a href="#cb26-11" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">&#39;Number of Violent Crimes&#39;</span>)</span>
+<span id="cb26-12"><a href="#cb26-12" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">&#39;Trends in Violent Crimes Over the Years&#39;</span>)</span>
+<span id="cb26-13"><a href="#cb26-13" aria-hidden="true" tabindex="-1"></a>plt.grid(<span class="va">True</span>)</span>
+<span id="cb26-14"><a href="#cb26-14" aria-hidden="true" tabindex="-1"></a>plt.legend()</span>
+<span id="cb26-15"><a href="#cb26-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb26-16"><a href="#cb26-16" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div>
+<div class="output display_data">
+<p><img
+src="vertopal_27714e9b00a4464ab89d25eaaa2927c3/365889f747c8024355255b671bcbf2a17fa55c74.png" /></p>
+</div>
+</div>
+<div class="cell markdown" id="zRTiNQo8PnbO">
+<ol>
+<li>The violent crimes have been the highest in the category from 1975
+to 2015</li>
+<li>From 1975 to 1980 the violent crimes have been more or less above
+near 12500.</li>
+<li>There was a rise in in 1980 to 1981 crossing 15000 mark and there
+was dip in crime from 1982 to 1985. There was a gradual rise from 1986
+to 1990 with peak values being reached at 1990.</li>
+<li>There was a considerable decrease from 1990 to 2005 and thereby
+remaining consistent from 2005 till 2009 and then gradually rising from
+2010 till 2015 achieving 1980 levels of 5000.</li>
+</ol>
+</div>
+<div class="cell code" data-execution_count="37"
+data-colab="{&quot;base_uri&quot;:&quot;https://localhost:8080/&quot;,&quot;height&quot;:564}"
+id="ppiBY1FcPrKz" data-outputId="77611bc8-2f4f-42a5-f767-fafdc1aa37eb">
+<div class="sourceCode" id="cb27"><pre
+class="sourceCode python"><code class="sourceCode python"><span id="cb27-1"><a href="#cb27-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Plotiing Homicide crimes from 1975-2023</span></span>
+<span id="cb27-2"><a href="#cb27-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> matplotlib.pyplot <span class="im">as</span> plt</span>
+<span id="cb27-3"><a href="#cb27-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-4"><a href="#cb27-4" aria-hidden="true" tabindex="-1"></a>years <span class="op">=</span> df[<span class="st">&#39;report_year&#39;</span>]</span>
+<span id="cb27-5"><a href="#cb27-5" aria-hidden="true" tabindex="-1"></a>violent_crimes <span class="op">=</span> df[<span class="st">&#39;homicides&#39;</span>]</span>
+<span id="cb27-6"><a href="#cb27-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-7"><a href="#cb27-7" aria-hidden="true" tabindex="-1"></a>plt.figure(figsize<span class="op">=</span>(<span class="dv">12</span>, <span class="dv">6</span>))</span>
+<span id="cb27-8"><a href="#cb27-8" aria-hidden="true" tabindex="-1"></a>plt.plot(years, violent_crimes, marker<span class="op">=</span><span class="st">&#39;o&#39;</span>, linestyle<span class="op">=</span><span class="st">&#39;-&#39;</span>, color<span class="op">=</span><span class="st">&#39;blue&#39;</span>, markersize<span class="op">=</span><span class="dv">5</span>, label<span class="op">=</span><span class="st">&#39;Violent Crimes&#39;</span>)</span>
+<span id="cb27-9"><a href="#cb27-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-10"><a href="#cb27-10" aria-hidden="true" tabindex="-1"></a>plt.xlabel(<span class="st">&#39;Year&#39;</span>)</span>
+<span id="cb27-11"><a href="#cb27-11" aria-hidden="true" tabindex="-1"></a>plt.ylabel(<span class="st">&#39;Number of homicides&#39;</span>)</span>
+<span id="cb27-12"><a href="#cb27-12" aria-hidden="true" tabindex="-1"></a>plt.title(<span class="st">&#39;Trends in homicides Over the Years&#39;</span>)</span>
+<span id="cb27-13"><a href="#cb27-13" aria-hidden="true" tabindex="-1"></a>plt.grid(<span class="va">True</span>)</span>
+<span id="cb27-14"><a href="#cb27-14" aria-hidden="true" tabindex="-1"></a>plt.legend()</span>
+<span id="cb27-15"><a href="#cb27-15" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb27-16"><a href="#cb27-16" aria-hidden="true" tabindex="-1"></a>plt.show()</span></code></pre></div>
+<div class="output display_data">
+<p><img
+src="vertopal_27714e9b00a4464ab89d25eaaa2927c3/fee7a03035ecd53ba1d0b5ac1dacb05d1ff66af3.png" /></p>
+</div>
+</div>
+<div class="cell markdown" id="Xj1vTqLkPuhm">
+<p><strong>Homicide crime</strong> - Homicide crime rates have been
+above 125 from1975 with values decresing in 1976 and remaining same till
+1979. There was another peak 1981 crossing 150k mark. and then gradually
+decreasing from 1981 to 1985 staying above 125. The crime levels again
+started rising from 1985 reaching highest level above 175k and staying
+same till 1993. It reduced to 150k in 1994 and then there was a sharp
+decline reaching 100k levels in 1999. After that it has remained
+consistent from 2001 till 2008 and then declining till 20114 reaching
+75k levels. The crime levels rose to 90 in 2015.</p>
+</div>
+<section id="7summary" class="cell markdown" id="5_0taa1SMujO">
+<h1><strong><em>7.SUMMARY</em></strong></h1>
+</section>
+<div class="cell markdown" id="TU1dIjVMM9D5">
+<ol>
+<li><p>New York City, New York is recorded highest number of crime state
+in USA. From 1975 to 2023 the crimes included robberies, violent crimes,
+homicides, rapes, and assaults, totally 8.5 Millions crimes are
+recorded.</p></li>
+<li><p>Los Angeles, California is the second highest crime recorded city
+in USA. Total crime from 1975 till 2023 is 3.9 Millions.</p></li>
+<li><p>Chicago, Illinois is the third most crime recoreded state in USA.
+Total crime recorded from 1975 till 2023 is 3.9 Millions.</p></li>
+<li><p>Los Angeles, California and Chicago, Illinois has almost same
+crime record.</p></li>
+<li><p>Detroit, Michigan and Houston, Texas comes on fourth and fifth
+place in the list. 1.8 Millions and 1.6 Millions crime are recorded in
+both the cites. Houstan City has less crime compare to Detroit.</p></li>
+<li><p>New York cities there is major drop in crimes in other cities.
+Los Angeles and Chicago has almost the same crime rate, Detroit and
+Houston this two cities has less crimes occured than above 3
+cities.Houstan has 1.6 Millions crime recorded which is lowest among all
+five cities.</p></li>
+<li><p>New York city has highest number of robbery compare all other
+cities. 2.3 Millions robbery are recoreded in NY. LA and Chicago were
+less than NY which is 89k and 85k robbery recorded. Detroit and Houstan
+is less then all above cities 43k and 40k robbery were recoreded. This
+data is from 1975 - 2023</p></li>
+<li><p>In 2010 New New York city has recorded highest number of robbery
+compare all other cities. 19.6k robbery are recoreded in NY. Chicago and
+LA were less than NY which is 14.2k and 10.9k robbery recorded. Houstan
+and Philadelphia, Pennsylvania is less then all above cities 9.4k and
+8.3k robbery were recoreded. This data is of year 2010.</p></li>
+<li><p>In 2010 New New York city has recorded most number of homicides
+which is 536 which is highest compare all other cities. 432 homicides
+were recoreded in Chicago. In Detroit 310 homicides were recorded which
+is lesser then NY and IL. Philadelphia and Los Angeles were fourth and
+fifth in the list of homicides</p></li>
+<li><p>In 2010 New New York city has recorded highest number of assaults
+compare all other cities. 27.3k assaults are recoreded in NY. Chicago
+and houstan were less than NY which is 13.7k and 12k assaults recorded.
+Detriot and los angeles, california is less then all above cities 10.7k
+and 9.3k assaults were recoreded. This data is of year 2010.</p></li>
+<li><p>Atlanta city has the crimes per capita among all states in USA.
+Crimes per capita is 99k which is highest among all the states. St.
+Louis is the second highest state which is recorded 96k little lower
+than Atlanta. Miami,Newark and Detroit has 96k 91k and 90k crimes per
+capita. This data is of 1975 till 2023</p></li>
+<li><p>New Orleans city has the highest homicides per capita among all
+states in USA. homicides rates are 1997.11 which is highest among all
+the states. Detroi is the second highest state which is recorded 1928.10
+little lower than New Orleans. St. Louis,Washington and Baltimore has
+1758.10 1660.97 and 1501.34 homicides per capita. This data is of 1975
+till 2023</p></li>
+<li><p>Cleveland city has seen the highest rapes per capita in USA which
+is 4816. Minneapolis has the second highest Memphis Atlanta and Detroiot
+is the top 5 rapes per capita states in USA</p></li>
+<li><p>New York is the highest on violent crimes which is recorded 42k.
+LA is the second number violent crimes. But we can see significant
+decrease the numbers.LA is the second highest whuch is recorded 19k.
+Chicago, Detriot and Houston are the third on the list</p></li>
+</ol>
+</div>
+<section id="8recommendations" class="cell markdown" id="m9_ADonvUzDN">
+<h1><strong><em>8.RECOMMENDATIONS</em></strong></h1>
+</section>
+<div class="cell markdown" id="2QidfLy7VAqf">
+<p><strong>Targeted Policing:</strong> Given the high rates of crime in
+cities like New York, Los Angeles, and Chicago, law enforcement
+organizations ought to think about putting targeted policing strategies
+into place to tackle particular criminal behaviors and raise public
+safety.</p>
+<p><strong>Community Engagement:</strong> To increase trust between the
+public and law enforcement, outreach initiatives and community
+engagement should be prioritized in high-crime areas. This can aid in
+deterring and dealing with criminal activity.</p>
+<p><strong>Implement data-driven interventions</strong> In order to
+pinpoint crime hotspots and allocate resources wisely. Better crime
+prevention may result from concentrating on areas with high crime
+rates.</p>
+<p><strong>Crime Reduction Programs:</strong> Start initiatives to cut
+down on particular crimes like robberies, murders, and assaults.
+Campaigns to raise public awareness of the issues surrounding violence
+should be a part of these programs.</p>
+<p><strong>Sharing Best Practices:</strong> Cities with high crime rates
+can gain from the best practices of cities with low crime rates.
+Effective crime reduction strategies can result from sharing experiences
+with one another.</p>
+<p>Homicide prevention should be a top priority in high-homicide cities
+like New Orleans and Detroit, as well as community safety initiatives
+and gun control laws.</p>
+<p><strong>Rape Prevention:</strong> Given Cleveland's high rate of
+reported rapes, comprehensive rape prevention and support programs with
+a focus on education, awareness, and victim support are needed.</p>
+<p>Analyze crime data and trends continuously to adjust strategies over
+time and make sure that interventions continue to reduce crime and
+improve public safety.</p>
+</div>
+<div class="cell code" id="McPOFTaiVrJO">
+<div class="sourceCode" id="cb28"><pre
+class="sourceCode python"><code class="sourceCode python"></code></pre></div>
+</div>
+</body>
+</html>
