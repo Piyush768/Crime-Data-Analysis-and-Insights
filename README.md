@@ -21,28 +21,7 @@ The goal of this project is to analyze crime data across U.S. states and provide
 2. **Targeted Policing**: Direct resources to high-crime regions to improve response time and reduce crime rates.
 3. **Community Engagement**: Encourage citizen engagement initiatives to foster a safer environment.
 
-## Evaluation and Metrics
-To provide an evaluation matrix with scores for your crime data analysis project, you can structure it as follows:
 
----
-
-### Evaluation Metrics and Scores
-
-This project used multiple evaluation metrics to assess the effectiveness and reliability of the models developed for crime prediction and hotspot identification. Here’s a breakdown of the key metrics and their scores:
-
-| **Metric**                | **Description**                                                                                  | **Score**       |
-|---------------------------|--------------------------------------------------------------------------------------------------|-----------------|
-| **Accuracy**              | Measures the proportion of correctly identified hotspots and crime incidents.                     | 0.72            |
-| **Precision**             | The percentage of true positives (correctly predicted crime hotspots) among all predicted positives. | 0.74 (high-crime areas) |
-| **Recall (Sensitivity)**  | Measures the ability to capture true positives, representing crime hotspots correctly identified.  | 0.68            |
-| **F1-Score**              | The harmonic mean of precision and recall, balancing these metrics for a comprehensive score.      | 0.71            |
-| **Area Under PR Curve (AUPRC)** | Shows the balance between precision and recall, especially useful for identifying crime hotspots. | 0.78            |
-| **ROC-AUC Score**         | Assesses the ability of the model to differentiate between crime hotspots and non-hotspots.       | 0.80            |
-
-### Interpretation of Scores
-
-- **Accuracy and Precision**: The model has a strong performance in identifying crime hotspots accurately, which is critical for effective deployment of resources.
-- **Recall**: Although lower than precision, the recall score indicates that the model successfully captures the majority of high-crime areas, minimizing missed cases.
 - **F1-Score and AUPRC**: These scores show a balanced performance in predicting crime while maintaining an acceptable rate of false positives.
 - **ROC-AUC Score**: An ROC-AUC of 0.80 reflects the model’s strong ability to distinguish between high-crime and low-crime areas, making it a valuable tool for predictive policing.
 
