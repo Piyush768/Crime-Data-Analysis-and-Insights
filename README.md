@@ -1,4 +1,4 @@
-##**Crime Data Analysis and Insights for Enhanced Law Enforcement**
+**Crime Data Analysis and Insights for Enhanced Law Enforcement**
 
 
 This project provides a comprehensive analysis of crime data across various jurisdictions in the United States. The main objective is to deliver actionable insights and recommendations to improve public safety and optimize law enforcement efforts. Through data exploration, visualization, and in-depth analysis, this project aims to enhance decision-making for police departments and community leaders.
